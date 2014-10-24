@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      window.requestAnimFrame = (function(callback) {
+        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+        function(callback) {
+          window.setTimeout(callback, 1000 / 60);
+        };
+      })();
+
+
+      function Point(x,y){
+        this.x = x;
+        this.y = y;
+      }
+
+      function randomMove () {
+        return Math.floor((Math.random() * 3) - 1);
+      }
+
+      function movePoint (myPoint) {
+        myPoint.x += randomMove();
+        myPoint.y += randomMove();
+        return myPoint;
+      }
+
+      function drawRectangle(myRectangle, context) {
+        context.beginPath();
+        context.moveTo(170, 80);
+        context.lineTo(130, 100);
+        context.lineTo(250, 180);
+        context.lineTo(420, 150);
+
+        context.closePath();
+        context.lineWidth = 5;
+        context.strokeStyle = 'blue';
+        context.fillStyle = "rgba(255,0,0,0.5)";
+        context.fill();
+        context.stroke();
+      }
+
+      function drawTriangle(myTriangle, context) {
+        context.beginPath();
+        context.moveTo(myTriangle.point1.x, myTriangle.point1.y);
+        context.lineTo(myTriangle.point2.x, myTriangle.point2.y);
+        context.lineTo(myTriangle.point3.x, myTriangle.point3.y);
+        context.closePath();
+        context.lineWidth = 0;
+        context.strokeStyle = 'blue';
+        context.fillStyle = myTriangle.color;
+        context.fill();
+        context.stroke();
+      }
+
+      var myYellowTriangle = {
+        point1: {x:190, y:80},
+        point2: {x:130, y:100},
+        point3: {x:250, y:180},
+        color: "rgba(255,255,0,0.5)" 
+      }
+      drawTriangle(myYellowTriangle,context);
+
+      var myBlueTriangle = {
+        point1: {x:90, y:180},
+        point2: {x:30, y:200},
+        point3: {x:150, y:280},
+        color: "rgba(0,0,255,0.5)" 
+      }
+      drawTriangle(myBlueTriangle,context);
+
+
+
+      function animate(myYellowTriangle, canvas, context) {
+        // update
+        // var time = (new Date()).getTime() - startTime;
+
+        // var linearSpeed = 100;
+        // pixels / second
+        var newPoint = movePoint(myYellowTriangle.point1)
+        // var newX = linearSpeed * time / 1000;
+        // if(newPoint.x < canvas.width) { // - myYellowTriangle.borderWidth ) {
+        //   alert(newPoint.x)
+        //   myYellowTriangle.point1 = newPoint;
+        // }
+        myYellowTriangle.point1 = newPoint;
+
+        // clear
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        drawTriangle(myYellowTriangle, context);
+
+        // request new frame
+        requestAnimFrame(function() {
+          animate(myYellowTriangle, canvas, context);
+        });
+      }
+
+
+
+      setTimeout(function() {
+        animate(myYellowTriangle, canvas, context);
+      }, 1000);
+
+    </script>
+  </body>
+</html>    
