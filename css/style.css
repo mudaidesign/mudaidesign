@@ -16,18 +16,20 @@ font-family: MadeGothamDark;
 src: url(../fonts/Gotham-Medium.otf);
 }
 
-.body,div,p,h1,h2,h3,h4,h5{
-	font-family: 'MadeGotham',"Arial";
-}
+/*.description{ font-weight: 100; font-style: normal; 100 italic}*/
 
+.body,div,p,h1,h2,h3,h4,h5{
+	font-family: 'Gotham A', 'Gotham B', 'Arial';
+	/*font-family: 'MadeGotham',"Arial";*/
+}
 
 h1,h2,h3,h4{
 	text-transform: uppercase;
 }
 
-
 .dark{
-	font-family: 'MadeGothamDark',"Arial";
+	font-family: 'Gotham A', 'Gotham B', 'Arial';
+	/*font-family: 'MadeGothamDark',"Arial";*/
 }
 
 .movietext{
@@ -89,6 +91,14 @@ h1,h2,h3,h4{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+.left {
+	display: block;
+	/*float: left;*/
+	position: absolute;
+	width: 600px;
+	left: -370;
 }
 
 #leadership img {
