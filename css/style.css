@@ -18,8 +18,8 @@ src: url(../fonts/Gotham-Medium.otf);
 
 /*.description{ font-weight: 100; font-style: normal; 100 italic}*/
 
-.body,div,p,h1,h2,h3,h4,h5{
-	font-family: 'Gotham A', 'Gotham B', 'Arial';
+.body,div,p,h1,h2,h3,h4,h5,h6{
+	font-family: 'Gotham A', 'Gotham B', 'Arial';font-weight: 300; font-style: normal
 	/*font-family: 'MadeGotham',"Arial";*/
 }
 
@@ -28,7 +28,7 @@ h1,h2,h3,h4{
 }
 
 .dark{
-	font-family: 'Gotham A', 'Gotham B', 'Arial';
+	font-family: 'Gotham A', 'Gotham B'; font-weight: 500; font-style: normal;
 	/*font-family: 'MadeGothamDark',"Arial";*/
 }
 
@@ -154,7 +154,7 @@ background-size:cover;
 /*NAVIGATION*/
 
 .navbar ul li > a { 
-	font-family: 'MadeGotham',"Arial";
+	font-family: 'Gotham A', 'Gotham B'; font-weight: 400; font-style: normal;	
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	text-shadow: 0 0 0, 0 0 0;
