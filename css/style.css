@@ -43,24 +43,32 @@ h1,h2,h3,h4{
 /* DIV SHAPES */
 
 .colorA{
-	background-color: #f1f1f1;
+	background-color: #FFEE00;
 }
 
 .colorB{
 	background-color: #00aeef;
+	color: #fff;
 }
 
 .colorC{
 	margin-top: -100px;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
+.colorD, .colorD h4, #leadership h5 {
+	background-color: #EE0088;
+	color: #fff;
+}
+
+.colorB h4 {
+	color: #fff;
+}
 
 .shaped {
   width: 100%;
   height: 130%;
-	-webkit-clip-path: polygon(0% 91%,100% 100%,100% 3%,0% 10%);
-  
+  /*-webkit-clip-path: polygon(0% 91%,100% 100%,100% 3%,0% 10%);*/
 }
 
 .padme{
@@ -77,13 +85,49 @@ h1,h2,h3,h4{
 	padding-bottom: 250px;
 }
 
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#leadership img {
+	height: 100px;
+	width: 100px;
+}
+
+#contact .link {
+	border: 1px solid #000;
+	padding: 15px 10px 15px 35px;
+	margin: 10px 0 10px 0;
+	color: #000;
+	text-decoration: none;
+}
+
+#contact .link a {
+	color: #000;
+}
+
+#card .social li {
+	height: 40px;
+	width: 40px;
+	float: right;
+	display: block;
+	margin: 0 10px 0 10px;
+}
 
 /* MOVIE */
 
 video#bgvid {
-position: fixed; right: 0; bottom: 0;
-min-width: 100%; min-height: 100%;
-width: auto; height: auto; z-index: -100;
+position: fixed;
+right: 0;
+top: 50px;
+/*min-width: 100%;
+min-height: 100%;
+*/
+width: 100%;
+height: auto;
+z-index: -100;
 background: url(mudaicnb.jpg) no-repeat;
 background-size:cover;
 }
