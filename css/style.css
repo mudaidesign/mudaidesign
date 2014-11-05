@@ -1,3 +1,4 @@
+/*
 
 @font-face {
 font-family: MadeKnockout;
@@ -13,6 +14,7 @@ src: url(../fonts/Gotham-Book.otf);
 font-family: MadeGothamDark;
 src: url(../fonts/Gotham-Medium.otf);
 }
+*/
 
 
 /* .description{ font-weight: 100; font-style: normal; 100 italic} */
@@ -112,6 +114,9 @@ h1,h2,h3,h4{
 	padding-top: 50px;
 }
 
+.padmovie{
+	padding-top: 100px;
+}
 
 .padme{
 	padding-top: 50px;
@@ -186,7 +191,7 @@ h1,h2,h3,h4{
 	display: block;
 	left: 0;
 	width: 100%;
-	margin-bottom: 700px;
+/* 	margin-bottom: 700px; */
 	border: 1px solid transparent;
 }
 
@@ -194,8 +199,10 @@ h1,h2,h3,h4{
 .video_container object,  
 .video_container embed,
 .video_container video{
-    position: fixed;
-    left: 0;
+    /*
+position: fixed;
+    
+*/left: 0;
     width: 100%;
     z-index: -100;
 }​
