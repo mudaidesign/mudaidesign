@@ -97,6 +97,10 @@ h1,h2,h3,h4{
 	text-decoration: underline;
 }
 
+.footlink{
+	color:#000;
+}
+
 .whitelink{
 	text-decoration: underline;
 	color:#fff;
@@ -115,7 +119,7 @@ h1,h2,h3,h4{
 }
 
 .padmovie{
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 .padme{
