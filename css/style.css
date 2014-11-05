@@ -1,31 +1,10 @@
-/*
-
-@font-face {
-font-family: MadeKnockout;
-src: url(../fonts/Knockout.otf);
-}
-
-@font-face {
-font-family: MadeGotham;
-src: url(../fonts/Gotham-Book.otf);
-}
-
-@font-face {
-font-family: MadeGothamDark;
-src: url(../fonts/Gotham-Medium.otf);
-}
-*/
-
-
 /* .description{ font-weight: 100; font-style: normal; 100 italic} */
 
 body,div,p,h1,h2,h3,h4,h5,h6{
-	font-family: 'Gotham A', 'Gotham B', 'Arial';font-weight: 300; font-style: normal
-	-webkit-font-smoothing: none;
-<<<<<<< Updated upstream
-=======
-	/*font-family: 'MadeGotham',"Arial";*/
->>>>>>> Stashed changes
+	font-family: 'Gotham A', 'Gotham B', 'Arial';
+	font-weight: 500; 
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1,h2,h3,h4{
@@ -34,7 +13,6 @@ h1,h2,h3,h4{
 
 .dark{
 	font-family: 'Gotham A', 'Gotham B'; font-weight: 500; font-style: normal;
-	/*font-family: 'MadeGothamDark',"Arial";*/
 }
 
 .bloglede{
@@ -226,8 +204,7 @@ position: fixed;
 /*NAVIGATION*/
 
 .navbar ul li > a {
-	font-family: 'Gotham A', 'Gotham B'; font-weight: 400; font-style: normal;	
-	-webkit-font-smoothing: none;
+	-webkit-font-smoothing: subpixel-antialiased;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	text-shadow: 0 0 0, 0 0 0;
