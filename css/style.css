@@ -37,6 +37,13 @@ h1,h2,h3,h4{
 	text-transform:none;
 }
 
+.bloghed{
+	font-family: 'Gotham A', 'Gotham B'; font-weight: 500; font-style: normal;
+	color:#666;
+	text-transform: uppercase;
+	font-size:11px;
+}
+
 .movietext{
 	color: #fff;
 	font-size: 200%;
