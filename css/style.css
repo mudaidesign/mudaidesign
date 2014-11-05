@@ -205,6 +205,7 @@ position: fixed;
 
 .navbar ul li > a {
 	-webkit-font-smoothing: subpixel-antialiased;
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	text-shadow: 0 0 0, 0 0 0;
