@@ -94,7 +94,7 @@ h1,h2,h3,h4{
 }
 
 .link{
-	text-decoration: underline;
+/* 	text-decoration: underline; */
 }
 
 .footlink{
@@ -105,9 +105,8 @@ h1,h2,h3,h4{
 	color:#666;
 }
 
-
 .whitelink{
-	text-decoration: underline;
+/* 	text-decoration: underline; */
 	color:#fff;
 }
 
