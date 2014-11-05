@@ -136,19 +136,27 @@ h1,h2,h3,h4{
 }
 
 /* MOVIE */
+#movie {
+	position: relative;
+	display: block;
+	left: 0;
+	width: 100%;
+	margin-bottom: 700px;
+	border: 1px solid transparent;
+}
 
-video#bgvid {
-position: fixed;
-right: 0;
-top: 50px;
-/*min-width: 100%;
-min-height: 100%;
-*/
-width: 100%;
-height: auto;
-z-index: -100;
-background: url(mudaicnb.jpg) no-repeat;
-background-size:cover;
+.video_container iframe,  
+.video_container object,  
+.video_container embed,
+.video_container video{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+}​
+
+#bgvid {
+	width: 100%
 }
 
 /*NAVIGATION*/

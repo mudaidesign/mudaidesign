@@ -22,18 +22,18 @@ Gumby.ready(function() {
 	Gumby.log("This is a touch enabled device...");
 });
 
-$(document).ready(function() {
-	$window = $(window);
-	$panel = $("#panelOne");
-	$workPanel = $("#work");
-	$(window).resize(function() {
-		var panelHeight =  (($window.width() / 5 ) - 110); 
-		$panel.css({ paddingBottom: panelHeight });
-		$panel.css({ paddingTop: panelHeight + 'px' });
-  // -webkit-clip-path: ;
-		// $panel.css({ clipPath: "polygon(0px 0px, 100% 0px, 100% 10px, 0px 10px") });
+// $(document).ready(function() {
+// 	$window = $(window);
+// 	$panel = $("#panelOne");
+// 	$workPanel = $("#work");
+// 	$(window).resize(function() {
+// 		var panelHeight =  (($window.width() / 5 ) - 110); 
+// 		$panel.css({ paddingBottom: panelHeight });
+// 		$panel.css({ paddingTop: panelHeight + 'px' });
+//   // -webkit-clip-path: ;
+// 		// $panel.css({ clipPath: "polygon(0px 0px, 100% 0px, 100% 10px, 0px 10px") });
 
-		$workPanel.css({ webkitClipPath: 'polygon(0% 91%,100% 100%,100% ' + 10-(window.width/300) + '%,0% 10%)' });
+// 		$workPanel.css({ webkitClipPath: 'polygon(0% 91%,100% 100%,100% ' + 10-(window.width/300) + '%,0% 10%)' });
 
-	});
-});
+// 	});
+// });
