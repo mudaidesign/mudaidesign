@@ -32,6 +32,11 @@ h1,h2,h3,h4{
 	/*font-family: 'MadeGothamDark',"Arial";*/
 }
 
+.bloglede{
+	font-size: 14px;
+	text-transform:none;
+}
+
 .movietext{
 	color: #fff;
 	font-size: 200%;
@@ -85,6 +90,11 @@ h1,h2,h3,h4{
 .padmetall{
 	padding-top: 150px;
 	padding-bottom: 250px;
+}
+
+.padbottom{
+	padding-bottom: 50px;
+
 }
 
 .center {
