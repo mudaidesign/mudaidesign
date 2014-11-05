@@ -19,9 +19,9 @@ src: url(../fonts/Gotham-Medium.otf);
 
 /* .description{ font-weight: 100; font-style: normal; 100 italic} */
 
-.body,div,p,h1,h2,h3,h4,h5,h6{
+body,div,p,h1,h2,h3,h4,h5,h6{
 	font-family: 'Gotham A', 'Gotham B', 'Arial';font-weight: 300; font-style: normal
-	/*font-family: 'MadeGotham',"Arial";*/
+	-webkit-font-smoothing: none;
 }
 
 h1,h2,h3,h4{
