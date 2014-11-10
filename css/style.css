@@ -43,52 +43,32 @@ h1,h2,h3,h4{
 	font-size: 200%;
 }
 
-
-.triangle-up {
-    width: 100%;
-    height: 0;  
-    padding-left:100%;
-    padding-bottom: 100%;
-    overflow: hidden;
-}
-.triangle_up:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    right: 0;
-    margin-left:-100px;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid #4679BD;
+.svg_bottom {
+	margin-top: -1px;
+	background-color: #fff;
 }
 
-
-.slope {
-	/*background-image: url(../img/slope.png) no-repeat;*/
-	right: 0;
-	line-height: 0;
-	padding: 0;
-	margin: 0;
-	position: relative;
+.svg_top {
+	margin-bottom: -1px;
+	background-color: #fff;
 }
 
-.inner_slope {
-	right: 0; 
-	height: auto; 
-	border-top: 10% solid transparent;
-	border-bottom: 10% solid transparent; 
-	
-	border-right:100% solid blue; 
+.movie_bottom {
+	margin-bottom: -1px;
 }
 
-.outer_slope {
-	width: 100%; 
-	height: auto; 
-	border-top: 100% solid transparent;
-	border-bottom: 0px solid transparent; 
-	
-	border-right:100% solid blue; 
+svg {
+	/*background-color: #fff;*/
+	clear: both;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin-top:0;
+    margin-bottom:0;
+    margin-right:0;
+    margin-left:0;
+    padding-top: 0;
 }
 
 .description{
@@ -108,8 +88,9 @@ h1,h2,h3,h4{
 }
 
 .colorC{
-	margin-top: -100px;
+	/*margin-top: -100px;*/
 	background-color: #fff;
+
 }
 
 .colorD, .colorD h4, #leadership h5 {
@@ -155,9 +136,9 @@ h1,h2,h3,h4{
 	padding-top: 50px;
 }
 
-.padmovie{
+/*.padmovie{
 	padding-top: 150px;
-}
+}*/
 
 .padme{
 	padding-top: 50px;
@@ -175,7 +156,6 @@ h1,h2,h3,h4{
 
 .padbottom{
 	padding-bottom: 50px;
-
 }
 
 .center {
@@ -228,11 +208,12 @@ h1,h2,h3,h4{
 
 /* MOVIE */
 #movie {
-	position: relative;
+	position: fixed;
 	display: block;
 	left: 0;
 	width: 100%;
 /* 	margin-bottom: 700px; */
+z-index: -100;
 	border: 1px solid transparent;
 }
 
