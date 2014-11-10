@@ -1,4 +1,7 @@
 /* .description{ font-weight: 100; font-style: normal; 100 italic} */
+html {
+	line-height: 0;
+}
 
 body,div,p,h1,h2,h3,h4,h5,h6{
 	font-family: 'Gotham A', 'Gotham B', 'Arial';
@@ -38,6 +41,54 @@ h1,h2,h3,h4{
 .movietext{
 	color: #fff;
 	font-size: 200%;
+}
+
+
+.triangle-up {
+    width: 100%;
+    height: 0;  
+    padding-left:100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+.triangle_up:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    right: 0;
+    margin-left:-100px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #4679BD;
+}
+
+
+.slope {
+	/*background-image: url(../img/slope.png) no-repeat;*/
+	right: 0;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.inner_slope {
+	right: 0; 
+	height: auto; 
+	border-top: 10% solid transparent;
+	border-bottom: 10% solid transparent; 
+	
+	border-right:100% solid blue; 
+}
+
+.outer_slope {
+	width: 100%; 
+	height: auto; 
+	border-top: 100% solid transparent;
+	border-bottom: 0px solid transparent; 
+	
+	border-right:100% solid blue; 
 }
 
 .description{
