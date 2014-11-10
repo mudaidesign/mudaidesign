@@ -1,44 +1,79 @@
-/* .description{ font-weight: 100; font-style: normal; 100 italic} */
-html {
+html
+{
 	line-height: 0;
+    overflow-x: hidden;
 }
 
-body,div,p,h1,h2,h3,h4,h5,h6{
+body,div,p,h1,h2,h3,h4,h5,h6 {
 	font-family: 'Gotham A', 'Gotham B', 'Arial';
 	font-weight: 300; 
 	font-style: normal;
 	-webkit-font-smoothing: antialiased;
+    max-width: 100%;
 }
 
 h1,h2,h3,h4{
 	text-transform: uppercase;
 }
 
-.dark{
-	font-family: 'Gotham A', 'Gotham B'; font-weight: 500; font-style: normal;
+/*NAVIGATION*/
+
+.navbar ul li > a {
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	text-shadow: 0 0 0, 0 0 0;
+	color:#433a3a;
+	display: block;
+	padding: 0 10px; 
+	white-space: nowrap; 
+	height: 60px; 
+	line-height: 65px;
+	font-size: .8rem; 
 }
 
-.bloglede{
+.nav-tab{
+	background: transparent url(../img/nav-marker.png) no-repeat;
+	position: fixed;
+}
+
+.navbar a.toggle:hover { 
+	background-color:rgba(10,10,10,0.1);
+}
+
+.navbar a.toggle:active, .navbar a.toggle.active { 
+}
+
+.dark{
+	font-family: 'Gotham A', 'Gotham B', 'Arial';
+	font-weight: 500; 
+	font-style: normal;
+}
+
+.bloglede {
 	font-size: 14px;
 	text-transform:none;
 }
 
 .bloghed{
-	font-family: 'Gotham A', 'Gotham B'; font-weight: 500; font-style: normal;
+	font-family: 'Gotham A', 'Gotham B', 'Arial';
+	font-weight: 500; 
+	font-style: normal;
 	color:#666;
 	text-transform: uppercase;
 	font-size:11px;
 }
 
-.white{
+.white {
 	color: #fff;
 }
 
-.black{
+.black {
 	color: #000;
 }
 
-.movietext{
+.movietext {
 	color: #fff;
 	font-size: 200%;
 }
@@ -66,15 +101,7 @@ h1,h2,h3,h4{
 }
 
 svg {
-	/*top: 0;
-	left: 0;
-	bottom: 0;
-	margin-top:0;
-    margin-bottom:0;
-    margin-right:0;
-    margin-left:0;
-    padding-top: 0;*/
-    overflow:visible;/* fix IE */
+    overflow:visible;
 }
 
 .description{
@@ -94,9 +121,7 @@ svg {
 }
 
 .colorC{
-	/*margin-top: -100px;*/
 	background-color: #fff;
-
 }
 
 .colorD, .colorD h4, #leadership h5 {
@@ -109,7 +134,7 @@ svg {
 }
 
 .link{
-/* 	text-decoration: underline; */
+	/* 	text-decoration: underline; */
 }
 
 .footlink{
@@ -121,7 +146,6 @@ svg {
 }
 
 .whitelink{
-/* 	text-decoration: underline; */
 	color:#fff;
 }
 
@@ -136,10 +160,6 @@ svg {
 .padtop{
 	padding-top: 50px;
 }
-
-/*.padmovie{
-	padding-top: 150px;
-}*/
 
 .padme{
 	padding-top: 50px;
@@ -199,14 +219,12 @@ svg {
 	color: #000;
 }
 
-#card .social li {
-	height: 40px;
-	width: 40px;
-	display: block;
-	margin: 0 10px 0 10px;
+#card ul {
+	height: 30px;
 }
 
 /* MOVIE */
+
 #movie {
 	position: fixed;
 	display: block;
@@ -224,52 +242,3 @@ svg {
     width: 100%;
     z-index: -100;
 }​
-
-#bgvid {
-	width: 100%
-}
-
-/*NAVIGATION*/
-
-.navbar ul li > a {
-	-webkit-font-smoothing: subpixel-antialiased;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: .1rem;
-	text-shadow: 0 0 0, 0 0 0;
-	color:#433a3a;
-	display: block;
-	padding: 0 10px; 
-	white-space: nowrap; 
-	height: 60px; 
-	line-height: 65px;
-	font-size: .8rem; 
-}
-
-.nav-tab{
-	background: transparent url(../img/nav-marker.png) no-repeat;
-	position: fixed;
-}
-
-.navbar a.toggle:hover { 
-	background-color:rgba(10,10,10,0.1);
-}
-
-.navbar a.toggle:active, .navbar a.toggle.active { }
-
-/*PANELS*/
-
-
-.panel{
-	width:100%;
-	padding-top: 100px;
-	padding-bottom: 40px;
-}
-
-
-.short-panel-color{
-	background-color:#f4f4f4;
-	width:100%;
-}
-
-
