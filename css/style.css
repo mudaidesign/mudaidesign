@@ -49,6 +49,7 @@ h1,h2,h3,h4{
 }
 
 .svg_top {
+	margin-top: 0px;
 	margin-bottom: -1px;
 	background-color: #fff;
 }
@@ -57,18 +58,23 @@ h1,h2,h3,h4{
 	margin-bottom: -1px;
 }
 
+.red_top {
+	padding-bottom: -2px;
+	background-color: black;
+	height: auto;
+	bottom: -1px;
+}
+
 svg {
-	/*background-color: #fff;*/
-	clear: both;
-	display: block;
-	top: 0;
+	/*top: 0;
 	left: 0;
 	bottom: 0;
 	margin-top:0;
     margin-bottom:0;
     margin-right:0;
     margin-left:0;
-    padding-top: 0;
+    padding-top: 0;*/
+    overflow:visible;/* fix IE */
 }
 
 .description{
@@ -100,11 +106,6 @@ svg {
 
 .colorB h4 {
 	color: #fff;
-}
-
-.shaped {
-  width: 100%;
-  /*-webkit-clip-path: polygon(0% 91%,100% 100%,100% 3%,0% 10%);*/
 }
 
 .link{
@@ -147,6 +148,7 @@ svg {
 
 .padmeshort{
 	padding-top: 50px;
+	padding-bottom: 30px;
 }
 
 .padmetall{
@@ -166,7 +168,6 @@ svg {
 
 .left {
 	display: block;
-	/*float: left;*/
 	position: absolute;
 }
 
@@ -201,7 +202,6 @@ svg {
 #card .social li {
 	height: 40px;
 	width: 40px;
-	float: right;
 	display: block;
 	margin: 0 10px 0 10px;
 }
@@ -212,19 +212,15 @@ svg {
 	display: block;
 	left: 0;
 	width: 100%;
-/* 	margin-bottom: 700px; */
-z-index: -100;
+	z-index: -100;
 	border: 1px solid transparent;
 }
 
 .video_container iframe,  
 .video_container object,  
 .video_container embed,
-.video_container video{
-    /*
-position: fixed;
-    
-*/left: 0;
+.video_container video {
+	left: 0;
     width: 100%;
     z-index: -100;
 }​
@@ -277,10 +273,3 @@ position: fixed;
 }
 
 
-.footer{
-	background-color: #58585a;
-	width:100%;
-	margin: 0px;
-	padding-top: 10px;
-	padding-bottom: 5px;
-}
