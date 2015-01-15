@@ -25,17 +25,45 @@ body {
 	@include body-font($weight: 300);
 	font-size: 18px;
 	line-height: 1.5em;
+	
+	h1 {
+		@include heading-font;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 500;
+		letter-spacing: 3px;
+		line-height: 1.5em;
+	}
+
+	h2 {
+		@include body-font;
+		font-size: 32px;
+		line-height: 1.5em;
+	}
 }
 
-h1 {
-	@include heading-font;
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 500;
-	letter-spacing: 3px;
+body.blue {
+	background: #2980b9;
+	color: white;
+	
+	h1 {
+		color: white;
+	}
+
+	h2 {
+		color: white;
+	}
 }
 
-h2 {
-	@include body-font;
-	font-size: 32px;
+body.green {
+	background: #16a085;
+	color: white;
+	
+	h1 {
+		color: white;
+	}
+
+	h2 {
+		color: white;
+	}
 }

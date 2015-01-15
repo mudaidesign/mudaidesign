@@ -13,6 +13,11 @@
 header {
 	@extend %container;
 
+	h1, h2, a {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
 	.action {
 		text-align: center;
 	}
@@ -29,6 +34,11 @@ header {
 	@extend %container;
 	@extend %clearfix;
 
+	h2 {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
 	img {
 		max-height: 100px;
 		width: 140px;
@@ -43,6 +53,11 @@ header {
 	@extend %container;
 	@extend %clearfix;
 
+	h2 {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
 	.employee {
 		@include grid;
 	}
@@ -51,15 +66,29 @@ header {
 .info {
 	@extend %container;
 
+	h2, h4, p {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
 	.location {
 		@extend %clearfix;	
 	}
 
 	.office {
 		@include grid;
+
+		p {
+			@extend %reset;
+		}
 	}
 }
 
 footer {
 	@extend %container;
+
+	p {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 }
