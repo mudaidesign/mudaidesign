@@ -1,2 +1,95 @@
 @charset "utf-8";
 @import 'normalize';
+
+@charset "utf-8";
+@import 'normalize';
+
+// TYPOGRAPHY
+
+$heading-text: 'Gotham A', 'Gotham B'; 
+// font-weight: 400; font-style: normal;
+// font-weight: 700; font-style: normal;
+
+$body-text: 'Whitney SSm A', 'Whitney SSm B';
+// font-weight: 400; font-style: normal;
+// font-weight: 400; font-style: italic;
+// font-weight: 700; font-style: normal;
+// font-weight: 700; font-style: italic;
+
+// GRID
+// @mixin grid($col: 3, $margin: 20px, $gutter: ($margin * 2)) {
+// 	float: left;
+// 	margin: $margin;
+// 	width: calc(100% * (1/$col) - $gutter);
+// }
+
+@mixin grid($margin: 20px) {
+	float: left;
+	margin: $margin;
+	width: calc(100% * (1/3) - 40px);
+}
+
+// EXTENDS
+
+%container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+// CUSTOM STYLES
+
+header {
+	@extend %container;
+}
+
+
+.principles {
+	@extend %container;
+	@extend %clearfix;
+
+	img {
+		max-height: 100px;
+	}
+
+	.practice {
+		@include grid;
+	}	
+}
+
+.team {
+	@extend %container;
+	@extend %clearfix;
+
+	.employee {
+
+		@include grid;
+	}
+
+	.name {
+		font-weight: 700;
+	}
+}
+
+.info {
+	@extend %container;
+
+	.location {
+		@extend %clearfix;	
+	}
+
+	.office {
+		@include grid;
+	}
+}
+
+footer {
+	@extend %container;
+}
