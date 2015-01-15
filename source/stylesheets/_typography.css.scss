@@ -1,0 +1,41 @@
+// TYPOGRAPHY
+
+$heading-font: 'Gotham A', 'Gotham B'; 
+// font-weight: 500; font-style: normal;
+
+$body-font: 'Whitney SSm A', 'Whitney SSm B';
+// font-weight: 300; font-style: normal;
+// font-weight: 300; font-style: italic;
+// font-weight: 600; font-style: normal;
+// font-weight: 600; font-style: italic;
+
+@mixin heading-font($color: black) {
+	font-family: 'Gotham A', 'Gotham B';
+	color: $color;
+}
+
+@mixin body-font($weight: 300, $style: normal, $color: black) {
+	font-family: 'Whitney SSm A', 'Whitney SSm B';
+	font-weight: $weight;
+	font-style: $style;
+	color: $color;
+}
+
+body {
+	@include body-font($weight: 300);
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+h1 {
+	@include heading-font;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+
+h2 {
+	@include body-font;
+	font-size: 32px;
+}

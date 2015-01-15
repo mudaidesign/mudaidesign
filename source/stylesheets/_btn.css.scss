@@ -1,0 +1,10 @@
+@mixin btn {
+	border: 1px solid #5F5654;
+	padding: 20px 40px;
+	color: black;
+	text-decoration: none;
+}
+
+.btn {
+	@include btn;
+}

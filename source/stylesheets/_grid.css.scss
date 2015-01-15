@@ -1,0 +1,15 @@
+// GRID
+// @mixin grid($col: 3, $margin: 20px, $gutter: ($margin * 2)) {
+// 	float: left;
+// 	margin: $margin;
+// 	width: calc(100% * (1/$col) - $gutter);
+// }
+
+// $gutter
+// $col
+
+@mixin grid($margin: 20px) {
+	float: left;
+	margin: $margin;
+	width: calc(100% * (1/3) - 40px);
+}
