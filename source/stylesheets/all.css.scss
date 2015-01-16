@@ -10,6 +10,10 @@
 
 // CUSTOM STYLES
 
+body {
+	transition: all 0.15s linear;
+}
+
 header {
 	@extend %container;
 
@@ -40,13 +44,37 @@ header {
 	}
 
 	img {
-		max-height: 100px;
+		max-height: 80px;
 		width: 140px;
+		margin-left: 20px;
+		margin-right: 20px;
+
+		@media screen and (min-width: $medium-tide) {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 
 	.practice {
-		@include grid;
-	}	
+		margin-left: 20px;
+		margin-right: 20px;
+
+		@media screen and (min-width: $medium-tide) {
+			@include grid2col;
+
+			&:nth-child(4) {
+				clear: both;
+			}
+		}
+
+		@media screen and (min-width: $high-tide) {
+			@include grid3col;
+
+			&:nth-child(4) {
+				clear: none;
+			}
+		}
+	}
 }
 
 .team {
@@ -59,7 +87,17 @@ header {
 	}
 
 	.employee {
-		@include grid;
+		margin-left: 20px;
+		margin-right: 20px;
+
+		@media screen and (min-width: $medium-tide) {
+			@include grid2col;
+		}
+
+
+		@media screen and (min-width: $high-tide) {
+			@include grid3col;
+		}
 	}
 }
 
@@ -72,11 +110,11 @@ header {
 	}
 
 	.location {
-		@extend %clearfix;	
+		@extend %clearfix;
 	}
 
 	.office {
-		@include grid;
+		@include grid3col;
 
 		p {
 			@extend %reset;
