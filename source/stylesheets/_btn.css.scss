@@ -7,4 +7,6 @@
 
 .btn {
 	@include btn;
+	font-size: 18px;
+	font-weight: 600;
 }

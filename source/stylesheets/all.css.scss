@@ -1,9 +1,9 @@
 @charset "utf-8";
 @import 'normalize';
-
-@import 'typography';
 @import 'variables';
+
 @import 'extends';
+@import 'typography';
 @import 'grid';
 
 @import 'btn';
@@ -22,8 +22,18 @@ header {
 		margin-right: 20px;
 	}
 
+	h1 {
+		margin-top: 60px;
+	}
+
+	h2 {
+		margin-top: 200px;
+		margin-bottom: 200px;
+	}
+
 	.action {
 		text-align: center;
+		margin-bottom: 240px;
 	}
 
 	a {
@@ -41,18 +51,25 @@ header {
 	h2 {
 		margin-left: 20px;
 		margin-right: 20px;
+		margin-bottom: 140px;
 	}
 
 	img {
-		max-height: 80px;
-		width: 140px;
+		max-height: 110px;
+		width: 190px;
 		margin-left: 20px;
 		margin-right: 20px;
+		margin-bottom: 60px;
 
 		@media screen and (min-width: $medium-tide) {
 			margin-left: 0;
 			margin-right: 0;
 		}
+	}
+
+	.tesselation {
+		width: 114px;
+		// temporary fix until SVG sizing is made consistent
 	}
 
 	.practice {
@@ -80,15 +97,30 @@ header {
 .team {
 	@extend %container;
 	@extend %clearfix;
+	margin-bottom: 120px;
 
 	h2 {
 		margin-left: 20px;
 		margin-right: 20px;
+		margin-bottom: 140px;
 	}
 
 	.employee {
 		margin-left: 20px;
 		margin-right: 20px;
+
+		h5 {
+			margin-bottom: 0;
+		}
+
+		.title {
+			font-style: italic;
+			font-size: 18px;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
 
 		@media screen and (min-width: $medium-tide) {
 			@include grid2col;
@@ -111,13 +143,25 @@ header {
 
 	.location {
 		@extend %clearfix;
+		margin-top: 100px;
 	}
 
 	.office {
-		@include grid3col;
-
 		p {
 			@extend %reset;
+		}
+
+		@media screen and (min-width: $medium-tide) {
+			@include grid2col;
+		}
+
+
+		@media screen and (min-width: $high-tide) {
+			@include grid3col;
+
+			.address {
+				max-width: 230px;
+			}
 		}
 	}
 }
@@ -128,5 +172,33 @@ footer {
 	p {
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+}
+
+// INTERACTION OVERRIDES
+
+body.blue {
+	background: #2980b9;
+	color: white;
+
+	h1 {
+		color: white;
+	}
+
+	h2 {
+		color: white;
+	}
+}
+
+body.green {
+	background: #16a085;
+	color: white;
+
+	h1 {
+		color: white;
+	}
+
+	h2 {
+		color: white;
 	}
 }
