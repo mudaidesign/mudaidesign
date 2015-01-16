@@ -8,14 +8,45 @@
 
 @import 'btn';
 
-// CUSTOM STYLES
+// GLOBAL STYLES
 
 body {
 	transition: all 0.15s linear;
 }
 
+a, a:visited, a:hover, a:active {
+	color: black;
+}
+
+header, .principles, .team, .info {
+	margin-bottom: 160px;
+
+	@media screen and (min-width: $high-tide) {
+		margin-bottom: 240px;
+	}
+}
+
+.principles h2, .team h2, .info h2 {
+	margin: 0 20px 60px 20px;
+
+	@media screen and (min-width: $medium-tide) {
+		margin-bottom: 80px;
+	}
+
+	@media screen and (min-width: $high-tide) {
+		margin-bottom: 120px;
+	}
+}
+
+// SECTION SPECIFIC STYLES
+
 header {
 	@extend %container;
+
+	@media screen and (min-width: $high-tide) {
+		background: url(/images/bg-dash.svg) no-repeat;
+		background-position: 200px -20px;
+	}
 
 	h1, h2, a {
 		margin-left: 20px;
@@ -33,7 +64,6 @@ header {
 
 	.action {
 		text-align: center;
-		margin-bottom: 240px;
 	}
 
 	a {
@@ -43,21 +73,19 @@ header {
 	}
 }
 
-
 .principles {
 	@extend %container;
 	@extend %clearfix;
 
-	h2 {
-		margin-left: 20px;
-		margin-right: 20px;
-		margin-bottom: 140px;
-	}
+	// h2 {
+	// 	margin-left: 20px;
+	// 	margin-right: 20px;
+	// 	margin-bottom: 140px;
+	// }
 
 	img {
 		max-height: 110px;
 		width: 190px;
-		// margin-left: 20px;
 		margin-right: 20px;
 
 		@media screen and (min-width: $medium-tide) {
@@ -70,12 +98,28 @@ header {
 	.tesselation {
 		width: 114px;
 		// temporary fix until SVG sizing is made consistent
+
+		@media screen and (min-width: $medium-tide) {
+			margin-top: 40px;
+		}
+
+		@media screen and (min-width: $high-tide) {
+			margin-top: 0;
+		}
 	}
 
 	.practice {
-		margin-bottom: 120px;
 		margin-left: 20px;
 		margin-right: 20px;
+		margin-bottom: 100px;
+
+		&:nth-child(4) {
+			margin-bottom: 0;
+		}
+
+		p {
+			margin: 0;
+		}
 
 		@media screen and (min-width: $medium-tide) {
 			@include grid2col;
@@ -98,13 +142,12 @@ header {
 .team {
 	@extend %container;
 	@extend %clearfix;
-	margin-bottom: 120px;
 
-	h2 {
-		margin-left: 20px;
-		margin-right: 20px;
-		margin-bottom: 140px;
-	}
+	// h2 {
+	// 	margin-left: 20px;
+	// 	margin-right: 20px;
+	// 	margin-bottom: 140px;
+	// }
 
 	.employee {
 		margin-left: 20px;
@@ -149,14 +192,18 @@ header {
 .info {
 	@extend %container;
 
-	h2, h4, p {
+	//removed H2 from here
+	h4, p {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
 
+	// h2 {
+	// 	margin-bottom: 140px;
+	// }
+
 	.location {
 		@extend %clearfix;
-		margin-top: 100px;
 		margin-bottom: 100px;
 	}
 
@@ -176,19 +223,6 @@ header {
 
 			&:nth-child(3) {
 				clear: both;
-			}
-		}
-
-
-		@media screen and (min-width: $high-tide) {
-			@include grid3col;
-
-			&:nth-child(3) {
-				clear: none;
-			}
-
-			.address {
-				max-width: 230px;
 			}
 		}
 	}
@@ -224,30 +258,35 @@ footer {
 	}
 }
 
+.privacy {
+	@extend %container;
+	padding: 0 20px;
+}
+
 // INTERACTION OVERRIDES
 
-body.blue {
-	background: #2980b9;
-	color: white;
+// body.blue {
+// 	background: #2980b9;
+// 	color: white;
 
-	h1 {
-		color: white;
-	}
+// 	h1 {
+// 		color: white;
+// 	}
 
-	h2 {
-		color: white;
-	}
-}
+// 	h2 {
+// 		color: white;
+// 	}
+// }
 
-body.green {
-	background: #16a085;
-	color: white;
+// body.green {
+// 	background: #16a085;
+// 	color: white;
 
-	h1 {
-		color: white;
-	}
+// 	h1 {
+// 		color: white;
+// 	}
 
-	h2 {
-		color: white;
-	}
-}
+// 	h2 {
+// 		color: white;
+// 	}
+// }
