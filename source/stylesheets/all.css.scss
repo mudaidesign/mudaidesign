@@ -57,13 +57,13 @@ header {
 	img {
 		max-height: 110px;
 		width: 190px;
-		margin-left: 20px;
+		// margin-left: 20px;
 		margin-right: 20px;
-		margin-bottom: 60px;
 
 		@media screen and (min-width: $medium-tide) {
 			margin-left: 0;
 			margin-right: 0;
+			margin-bottom: 40px;
 		}
 	}
 
@@ -73,6 +73,7 @@ header {
 	}
 
 	.practice {
+		margin-bottom: 120px;
 		margin-left: 20px;
 		margin-right: 20px;
 
