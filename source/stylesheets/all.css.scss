@@ -199,6 +199,18 @@ header {
 
 		li {
 			display: inline-block;
+
+			a {
+				@extend %ir;
+				margin-right: 10px;
+
+				img {
+					height: 30px;
+					 width: 30px;
+				}
+			}
+
+
 		}
 	}
 }
