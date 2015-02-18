@@ -61,13 +61,6 @@ header {
 		margin-top: 140px;
 		margin-bottom: 140px;
 	}
-
-	.action a {
-		text-align: center;
-		display: inline-block;
-		width: 200px;
-		margin-bottom: 20px;
-	}
 }
 
 .principles {
@@ -164,9 +157,25 @@ header {
 .info {
 	@extend %container;
 
+	h2 {
+		margin-bottom: 100px;
+	}
+
 	h4, p {
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+
+	.action {
+		margin-left: 20px;
+		margin-bottom: 100px;
+	}
+
+	.action a {
+		text-align: center;
+		display: inline-block;
+		width: 200px;
+		margin-bottom: 20px;
 	}
 
 	.location {
