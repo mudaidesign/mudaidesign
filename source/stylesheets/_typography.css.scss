@@ -1,7 +1,7 @@
 // TYPOGRAPHY
 
 $heading-font: 'Gotham A', 'Gotham B';
-// font-weight: 500; font-style: normal;
+// font-weight: 300; font-style: normal;
 // font-weight: 900; font-style: normal;
 
 $body-font: 'Whitney SSm A', 'Whitney SSm B';
@@ -10,7 +10,7 @@ $body-font: 'Whitney SSm A', 'Whitney SSm B';
 // font-weight: 600; font-style: normal;
 // font-weight: 600; font-style: italic;
 
-@mixin heading-font($color: black) {
+@mixin heading-font($color: black, $weight: 900) {
 	font-family: 'Gotham A', 'Gotham B';
 	color: $color;
 }

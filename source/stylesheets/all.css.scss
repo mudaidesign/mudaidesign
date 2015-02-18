@@ -60,6 +60,7 @@ header {
 
 	h2 {
 		font-size: 1em;
+		@include heading-font($weight: 300);
 	}
 }
 
