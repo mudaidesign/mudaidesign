@@ -44,7 +44,7 @@ header {
 	@extend %container;
 
 	@media screen and (min-width: $high-tide) {
-		background: url(/images/bg-dash.svg) no-repeat;
+		// background: url(/images/bg-dash.svg) no-repeat;
 		background-position: 200px -20px;
 	}
 
@@ -58,16 +58,13 @@ header {
 	}
 
 	h2 {
-		margin-top: 200px;
-		margin-bottom: 200px;
+		margin-top: 140px;
+		margin-bottom: 140px;
 	}
 
-	.action {
+	.action a {
 		text-align: center;
-	}
-
-	a {
-		display: block;
+		display: inline-block;
 		width: 200px;
 		margin-bottom: 20px;
 	}
