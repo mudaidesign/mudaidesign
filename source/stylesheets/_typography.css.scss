@@ -11,12 +11,12 @@ $body-font: 'Whitney SSm A', 'Whitney SSm B';
 // font-weight: 600; font-style: italic;
 
 @mixin heading-font($color: black, $weight: 900) {
-	font-family: 'Gotham A', 'Gotham B';
+	font-family: 'Gotham A', 'Gotham B', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	color: $color;
 }
 
 @mixin body-font($weight: 300, $style: normal, $color: black) {
-	font-family: 'Whitney SSm A', 'Whitney SSm B';
+	font-family: 'Whitney SSm A', 'Whitney SSm B', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: $weight;
 	font-style: $style;
 	color: $color;
