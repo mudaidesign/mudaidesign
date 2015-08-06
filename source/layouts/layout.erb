@@ -11,9 +11,9 @@
     <!-- <meta property="fb:page_id" content=""> -->
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "We are Practical Innovators" %></title>
+    <title><%= current_page.data.title || "Designed with &#9825;" %></title>
 
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/719666/css/fonts.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/719666/css/fonts.css" /> -->
 
     <%= stylesheet_link_tag "all" %>
 
@@ -23,6 +23,18 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <header class="main-header">
+        <h1 class="logo">MU/DAI <span class="description">| A Design Firm</span></h1>
+        <nav class="site-nav">
+            <a href="#" class="menu-click">Menu</a>
+            <ul class="menu hide">
+                <li>Work</li>
+                <li>Outlook</li>
+                <li>Studios</li>
+            </ul>
+        </nav>
+    </header>
+
     <%= yield %>
 
     <script>
@@ -32,6 +44,27 @@
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-56443587-1', 'auto');
         ga('send', 'pageview');
-      </script>
+    </script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+        $('.grid').masonry({
+              columnWidth: 400,
+              itemSelector: '.grid-item',
+              gutter: 10,
+              transitionDuration: '0.1s',
+              isFitWidth: true
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('.menu-click').on('click', function() {
+            event.preventDefault();
+            $('.menu').toggleClass('hide');
+        });
+    </script>
+
   </body>
 </html>

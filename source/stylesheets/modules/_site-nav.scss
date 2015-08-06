@@ -1,0 +1,24 @@
+.site-nav {
+	float: right;
+	position: relative;
+	top: 12px;
+
+	ul {
+		@extend %reset;
+		text-align: center;
+		list-style: none;
+	}
+
+	li {
+		font-size: 4em;
+	}
+
+	.menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 2000;
+	}
+}
