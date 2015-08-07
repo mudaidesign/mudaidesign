@@ -8,6 +8,8 @@
 
 .grid-item {
 	padding: 20px;
+	position: relative;
+	overflow: hidden;
 
 	&:hover {
 
@@ -15,6 +17,8 @@
 
 	h3 {
 		@extend %reset;
+		position: relative;
+		z-index: 10;
 	}
 }
 
@@ -44,6 +48,29 @@
 
 .item-icon {
 	padding-bottom: 20px;
+	position: relative;
+	z-index: 10;
+}
+
+.item-bg {
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+}
+
+.has-item-bg {
+	h3 {
+		color: #fff;
+		background: rgba(0, 0, 0, .3);
+		padding: 20px;
+	}
+
+	.cls-2, path {
+		stroke: #fff;
+		fill: #fff;
+	}
 }
 
 a.grid-item {
@@ -110,6 +137,32 @@ a.grid-item {
 
 	.item-icon {
 		@include highlight-color($social-highlight);
+	}
+}
+
+.instagram {
+	border-color: transparent;
+
+	.item-icon {
+		@include highlight-color($social-highlight);
+	}
+
+	&:hover {
+		@include border-color($social-highlight);
+	}
+}
+
+.video-tile {
+	&:hover {
+		@include border-color($video-highlight);
+
+		h2, h3 {
+			color: $video-highlight;
+		}
+	}
+
+	.item-icon {
+		@include highlight-color($video-highlight);
 	}
 }
 

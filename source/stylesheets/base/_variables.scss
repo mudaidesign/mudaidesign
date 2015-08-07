@@ -1,8 +1,16 @@
-// COLORS
+// GRID VARIABLES
+$single-col-width: 400px;
+$single-col-height: 400px;
+$gutter: 10px;
 
+// BREAKPOINTS
+$high-tide: 1230px;
+$med-tide: 810px;
+
+
+// COLORS
 $doc-highlight: #FFAA07;
 $case-highlight: #EF233C;
 $social-highlight: #4BB3FD;
-// $space-highlight: #676BFB;
-
+$video-highlight: #6766FC;
 $base-bg: #2B2D42;

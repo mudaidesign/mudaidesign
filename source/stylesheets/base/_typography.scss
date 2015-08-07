@@ -43,6 +43,12 @@ h1 {
 	font-weight: 300;
 	letter-spacing: 3px;
 	@extend %reset;
+	text-align: center;
+	padding: 120px 0 60px 0;
+
+	@media screen and (min-width: $med-tide) {
+		font-size: 3.5em;
+	}
 }
 
 h2 {
@@ -59,4 +65,5 @@ h3 {
 a, a:hover, a:visited, a:focus {
 	color: white;
 	text-decoration: none;
+	cursor: pointer !important;
 }
