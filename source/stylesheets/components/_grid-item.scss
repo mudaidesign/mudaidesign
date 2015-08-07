@@ -1,0 +1,131 @@
+@mixin highlight-color($color) {
+	border-bottom: 4px solid $color;
+}
+
+@mixin border-color($color) {
+	border: 4px solid $color;
+}
+
+.grid-item {
+	padding: 20px;
+
+	&:hover {
+
+	}
+
+	h3 {
+		@extend %reset;
+	}
+}
+
+.item-text {
+	padding: 40px;
+
+	h2 {
+		@extend %reset;
+		font-size: 1.2em;
+		margin-bottom: 20px;
+		margin-top: 30px;
+	}
+
+	h2 + h3 {
+		@extend %reset;
+	}
+
+	h3 {
+		@extend %reset;
+		margin-top: 40px;
+	}
+}
+
+.grid-item svg {
+	height: 80px;
+}
+
+.item-icon {
+	padding-bottom: 20px;
+}
+
+a.grid-item {
+	@include border-color(transparent);
+}
+
+.white-paper {
+	&:hover {
+		@include border-color($doc-highlight);
+		background: $doc-highlight;
+
+		path {
+			stroke: #fff;
+			fill: #fff;
+		}
+
+		h3 {
+			color: #fff;
+		}
+
+		.item-icon {
+			@include highlight-color(#fff);
+		}
+	}
+
+	.item-icon {
+		@include highlight-color($doc-highlight);
+	}
+}
+
+.case-study {
+
+	&:hover {
+		@include border-color($case-highlight);
+
+		h2, h3 {
+			color: $case-highlight;
+		}
+	}
+
+	.item-icon {
+		@include highlight-color($case-highlight);
+	}
+}
+
+.social {
+	&:hover {
+		@include border-color($social-highlight);
+		background: $social-highlight;
+
+		h2, h3 {
+			color: #fff;
+		}
+
+		path {
+			stroke: #fff;
+			fill: #fff;
+		}
+
+		.item-icon {
+			@include highlight-color(#fff);
+		}
+	}
+
+	.item-icon {
+		@include highlight-color($social-highlight);
+	}
+}
+
+.box {
+	height: 100%;
+	width: 50%;
+	float: left;
+	overflow: hidden;
+
+	@media all and (max-width: $high-tide) {
+		float: none;
+		width: 100%;
+		height: 50%;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}

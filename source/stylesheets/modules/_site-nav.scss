@@ -1,7 +1,5 @@
 .site-nav {
 	float: right;
-	position: relative;
-	top: 12px;
 
 	ul {
 		@extend %reset;
@@ -11,6 +9,7 @@
 
 	li {
 		font-size: 4em;
+		padding: 40px 0;
 	}
 
 	.menu {
@@ -20,5 +19,7 @@
 		height: 100%;
 		width: 100%;
 		z-index: 2000;
+		background-color: black;
+	    padding-top: 20vh;
 	}
 }

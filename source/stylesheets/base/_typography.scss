@@ -10,6 +10,10 @@ $body-font: 'Whitney SSm A', 'Whitney SSm B';
 // font-weight: 600; font-style: normal;
 // font-weight: 600; font-style: italic;
 
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
 @mixin heading-font($color: black, $weight: 900) {
 	font-family: 'Gotham A', 'Gotham B', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	color: $color;
@@ -24,12 +28,12 @@ $body-font: 'Whitney SSm A', 'Whitney SSm B';
 
 body {
 	@include body-font($weight: 300);
-	font-size: 16px;
-	line-height: 1.5em;
+	font-size: 12px;
+	// line-height: 1.5em;
 
-	// @media screen and (min-width: $medium-tide) {
-	// 	font-size: 22px;
-	// }
+	@media screen and (min-width: 720px) {
+		font-size: 18px;
+	}
 
 }
 
@@ -39,7 +43,7 @@ h1 {
 	font-size: 18px;
 	font-weight: 900;
 	letter-spacing: 3px;
-	line-height: 1.5em;
+	// line-height: 1.5em;
 
 	.description {
 		font-weight: 300;
@@ -49,9 +53,15 @@ h1 {
 h2 {
 	@include body-font;
 	font-size: 2em;
-	line-height: 1.5em;
+	// line-height: 1.5em;
+}
+
+h3 {
+	@include body-font(100);
+	font-size: 1.5em;
 }
 
 a, a:hover, a:visited, a:focus {
 	color: white;
+	text-decoration: none;
 }
