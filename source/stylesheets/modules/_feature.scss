@@ -18,6 +18,8 @@
 
 	h1 {
 		font-size: 2em;
+		text-align: left;
+		padding: 0;
 	}
 
 	h2 {
@@ -40,7 +42,7 @@
 }
 
 .feature.main-feature {
-	background: url(/images/HOMEPAGE_trial1.jpg) center center / cover;
+	background: url(/images/HOMEPAGE.jpg) center center / cover;
 
 	.title {
 		text-align: center;
@@ -90,15 +92,15 @@
 }
 
 .featured-case.acw {
-	background: url(https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?q=80&fm=jpg&s=4bf1164d23eea4f04aeefe1732149cf3) center center / cover;
+	background: url(/images/bg-acw.jpeg) center center / cover;
 }
 
 .featured-case.xcor {
-	background: url(https://images.unsplash.com/photo-1424460421773-58b49adfc68a?q=80&fm=jpg&s=d6061c78226c02e41281981b7e3161d3) center center / cover;
+	background: url(/images/bg-xcor.jpeg) center center / cover;
 }
 
 .featured-case.insite {
-	background: url(https://images.unsplash.com/uploads/1413387158190559d80f7/6108b580?q=80&fm=jpg&s=91d5cbdf1cd789befb96c6eb2f6c6f17) center center / cover;
+	background: url(/images/INSITE/INSITE_04.jpg) center center / cover;
 }
 
 .featured-case.woc {

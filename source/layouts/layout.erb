@@ -16,8 +16,6 @@
     <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/719666/css/fonts.css" /> -->
 
     <%= stylesheet_link_tag "all" %>
-
-    <!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <%= javascript_include_tag  "all" %>
 
   </head>
@@ -26,10 +24,14 @@
 	<header class="main-header">
 		<a href="/" class="logo">MU/DAI</a>
 		<nav class="site-nav">
-			<a href="#" class="menu-click">Menu</a>
+			<a href="#" class="menu-click">
+				<img src="images/headericons/menu.svg" alt="menu">
+      </a>
 			<ul class="menu hide">
 				<li class="close-menu">
-					<a href="#">Close</a>
+					<a href="#">
+						<img src="images/headericons/close-menu.svg" alt="close menu">
+					</a>
 				</li>
 				<li>
 					<a href="work.html">Work</a>
@@ -49,25 +51,37 @@
 	<footer>
 		<div class="locations">
 			<div class="city">
-				<h3>A<span class="highlight">ust</span>in</h3>
+				<h3>Austin</h3>
 				<p>2612 Hidalgo Street<br>Austin, TX 78702</p>
-				<a href="tel:5127388110" class="tel">(512)-738-8110</a>
-				<a href="#" class="btn email">Email Us</a>
+				<a href="tel:5127388110" class="tel">(512) 738-8110</a>
+				<a href="mailto:aus@mudaidesign.com" class="btn email">Email Us</a>
+			</div>
+
+			<div class="city hq">
+				<h3>Chicago HQ</h3>
+				<p>35 E. Wacker, 14th Floor<br>Chicago, IL 60601</p>
+				<a href="tel:3129820040" class="tel">(312) 982-0040</a>
+				<a href="mailto:chi@mudaidesign.com" class="btn email">Email Us</a>
 			</div>
 
 			<div class="city">
-				<h3>Chic<span class="highlight">ago</span> HQ</h3>
-				<p>35 E. Wacker, Suite 1400<br>Chicago, IL 60601</p>
-				<a href="tel:3129820040" class="tel">(312)-982-0040</a>
-				<a href="#" class="btn email">Email Us</a>
-			</div>
-
-			<div class="city">
-				<h3>Los <span class="highlight">Ang</span>eles</h3>
+				<h3>Los Angeles</h3>
 				<p>1600 Main Street<br>Venice, CA 90291</p>
-				<a href="tel:3103417200" class="tel">(312)-341-7200</a>
-				<a href="#" class="btn email">Email Us</a>
+				<a href="tel:3103417200" class="tel">(310) 341-7200</a>
+				<a href="mailto:lax@mudaidesign.com" class="btn email">Email Us</a>
 			</div>
+		</div>
+
+		<div class="social">
+			<a href="http://twitter.com/mudaidesign">
+				<img src="images/footericons/twitter.svg" class="svg" alt="twitter">
+			</a>
+			<a href="https://www.facebook.com/mudaidesign">
+				<img src="images/footericons/fb.svg" class="svg" alt="facebook">
+			</a>
+			<a href="https://www.linkedin.com/company/mu-dai">
+				<img src="images/footericons/linkedin.svg" class="svg" alt="linkedin">
+			</a>
 		</div>
 	</footer>
 

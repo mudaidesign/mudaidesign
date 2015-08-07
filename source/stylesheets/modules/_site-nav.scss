@@ -1,5 +1,6 @@
 .site-nav {
 	float: right;
+	position: relative;
 
 	ul {
 		@extend %reset;
@@ -9,7 +10,12 @@
 
 	li {
 		font-size: 4em;
-		padding: 40px 0;
+		margin-bottom: 60px;
+	}
+
+	li a:hover {
+		border-bottom: 4px solid #fff;
+		padding-bottom: 20px;
 	}
 
 	.menu {
@@ -21,5 +27,19 @@
 		z-index: 2000;
 		background: $base-bg;
 	    padding-top: 20vh;
+	    overflow: scroll;
+	}
+
+	.menu-click {
+		img {
+			width: 24px;
+		}
+	}
+
+	.close-menu {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		line-height: 0;
 	}
 }
