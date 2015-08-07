@@ -7,18 +7,125 @@
 }
 
 .grid-item {
+	float: left;
+	width: $single-col-width;
+	height: $single-col-height;
+	background: white;
+	@extend %clearfix;
+	margin-bottom: $gutter;
 	padding: 20px;
 	position: relative;
 	overflow: hidden;
-
-	&:hover {
-
-	}
 
 	h3 {
 		@extend %reset;
 		position: relative;
 		z-index: 10;
+	}
+}
+
+.box {
+	height: 100%;
+	width: 50%;
+	float: left;
+	overflow: hidden;
+
+	@media all and (max-width: $high-tide) {
+		float: none;
+		width: 100%;
+		height: 50%;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.grid-item--width2 {
+	width: $single-col-width * 2 + 10;
+	height: $single-col-height;
+
+	@media all and (max-width: $high-tide) {
+		width: $single-col-width;
+		height: $single-col-height * 2;
+	}
+}
+
+.grid-item--width2.full-text {
+	@media all and (min-width: $high-tide) {
+		width: 790px;
+	}
+}
+
+.grid-item--height2 {
+	width: $single-col-width;
+	height: $single-col-height * 2 + 10;
+
+	.box {
+		width: 100%;
+		height: 50%;
+	}
+}
+
+.grid-item--width2-height2 {
+	width: $single-col-width * 2 + 10;
+	height: $single-col-height * 2 + 10;
+
+	@media all and (max-width: $med-tide) {
+		width: $single-col-width;
+		height: $single-col-height;
+	}
+}
+
+.grid-item--width-full {
+	width: $single-col-width * 3 + 20px;
+	height: $single-col-width;
+
+	@media all and (max-width: $high-tide) {
+		width: $single-col-width * 2 + 10px;
+	}
+
+	@media all and (max-width: $med-tide) {
+		width: $single-col-width;
+	}
+}
+
+.grid-item--width-height-full {
+	width: $single-col-width * 3 + 20px;
+	height: 720px;
+
+	@media all and (max-width: $high-tide) {
+		width: $single-col-width * 2 + 10;
+		height: 480px
+	}
+
+	@media all and (max-width: $med-tide) {
+		width: $single-col-width;
+		height: 240px;
+	}
+
+	&.oculus {
+		height: 660px;
+
+		@media all and (max-width: $high-tide) {
+			height: 440px
+		}
+
+		@media all and (max-width: $med-tide) {
+			height: 220px;
+		}
+	}
+
+	&.insite-banner {
+		height: 680px;
+
+		@media all and (max-width: $high-tide) {
+			height: 450px
+		}
+
+		@media all and (max-width: $med-tide) {
+			height: 220px;
+		}
 	}
 }
 
@@ -78,6 +185,13 @@ a.grid-item {
 }
 
 .white-paper {
+
+	.item-icon {
+		@include highlight-color($doc-highlight);
+	}
+}
+
+a.white-paper {
 	&:hover {
 		@include border-color($doc-highlight);
 		background: $doc-highlight;
@@ -95,14 +209,16 @@ a.grid-item {
 			@include highlight-color(#fff);
 		}
 	}
-
-	.item-icon {
-		@include highlight-color($doc-highlight);
-	}
 }
 
 .case-study {
 
+	.item-icon {
+		@include highlight-color($case-highlight);
+	}
+}
+
+a.case-study {
 	&:hover {
 		@include border-color($case-highlight);
 
@@ -110,13 +226,15 @@ a.grid-item {
 			color: $case-highlight;
 		}
 	}
-
-	.item-icon {
-		@include highlight-color($case-highlight);
-	}
 }
 
 .social {
+	.item-icon {
+		@include highlight-color($social-highlight);
+	}
+}
+
+a.social {
 	&:hover {
 		@include border-color($social-highlight);
 		background: $social-highlight;
@@ -134,10 +252,6 @@ a.grid-item {
 			@include highlight-color(#fff);
 		}
 	}
-
-	.item-icon {
-		@include highlight-color($social-highlight);
-	}
 }
 
 .instagram {
@@ -146,13 +260,22 @@ a.grid-item {
 	.item-icon {
 		@include highlight-color($social-highlight);
 	}
+}
 
+a.instagram {
 	&:hover {
 		@include border-color($social-highlight);
 	}
 }
 
 .video-tile {
+
+	.item-icon {
+		@include highlight-color($video-highlight);
+	}
+}
+
+a.video-tile {
 	&:hover {
 		@include border-color($video-highlight);
 
@@ -160,25 +283,85 @@ a.grid-item {
 			color: $video-highlight;
 		}
 	}
+}
 
-	.item-icon {
-		@include highlight-color($video-highlight);
+.item-space {
+	padding: 0;
+
+	@media all and (max-width: $high-tide) {
+		height: auto;
+	}
+
+	.box-a {
+		float: left;
+
+		@media all and (max-width: $high-tide) {
+			float: none;
+		}
+	}
+
+	.box-b {
+		float: right;
+	    // height: 100%;
+
+		@media all and (max-width: $high-tide) {
+			float: none;
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.text {
+		width: 40%;
+		padding: 20px;
+
+		@media all and (max-width: $high-tide) {
+			width: 100%;
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.video-embed {
+		width: 60%;
+
+		@media all and (max-width: $high-tide) {
+			width: 100%;
+			height: auto;
+			width: 100%;
+		}
 	}
 }
 
-.box {
-	height: 100%;
-	width: 50%;
-	float: left;
-	overflow: hidden;
-
+.grid-middle {
 	@media all and (max-width: $high-tide) {
-		float: none;
-		width: 100%;
-		height: 50%;
-	}
+		.box-a {
+			float: left;
+		}
 
-	img {
-		max-width: 100%;
+		.box-b {
+			float: right;
+		}
+	}
+}
+
+.responsive-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.responsive-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.item-pic {
+	@media all and (max-width: $med-tide) {
+		height: $single-col-height;
+		width: $single-col-width;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+
+.full-text {
+	@media all and (max-width: $med-tide) {
+		height: $single-col-height;
 	}
 }

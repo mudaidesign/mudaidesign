@@ -1,4 +1,3 @@
-// INDEX VIEW
 .content {
 	padding-top: $gutter;
 	margin: 0 auto;
@@ -9,33 +8,3 @@
 	position: relative;
 	margin: 0 auto;
 }
-
-.grid-item {
-	float: left;
-	width: $single-col-width;
-	height: $single-col-height;
-	background: white;
-	@extend %clearfix;
-	margin-bottom: $gutter;
-}
-
-.grid-item--width2 {
-	width: $single-col-width * 2 + 10;
-	height: $single-col-height;
-
-	@media all and (max-width: $high-tide) {
-		width: $single-col-width;
-		height: $single-col-height * 2;
-	}
-}
-
-.grid-item--height2 {
-	width: $single-col-width;
-	height: $single-col-height * 2 + 10;
-
-	.box {
-		width: 100%;
-		height: 50%;
-	}
-}
-
