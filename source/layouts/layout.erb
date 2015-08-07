@@ -6,13 +6,13 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
     <!-- <meta property="fb:page_id" content=""> -->
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Designed with &#9825;" %></title>
-
+    <title><%= current_page.data.title || "We Design with &#9825;" %></title>
+    <meta name="description" content="MU/DAI is a data-driven design firm focused on humanizing digital experiences. Learn more about how our team helps businesses and brands succeed.">
     <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/719666/css/fonts.css" /> -->
 
     <%= stylesheet_link_tag "all" %>
@@ -23,28 +23,54 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <header class="main-header">
-        <a href="/" class="logo">MU/DAI</a>
-        <nav class="site-nav">
-            <a href="#" class="menu-click">Menu</a>
-            <ul class="menu hide">
-                <li class="close-menu">
-                  <a href="#">Close</a>
-                </li>
-                <li>
-                  <a href="#">Work</a>
-                </li>
-                <li>
-                  <a href="#">Outlook</a>
-                </li>
-                <li>
-                  <a href="#">Studios</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+	<header class="main-header">
+		<a href="/" class="logo">MU/DAI</a>
+		<nav class="site-nav">
+			<a href="#" class="menu-click">Menu</a>
+			<ul class="menu hide">
+				<li class="close-menu">
+					<a href="#">Close</a>
+				</li>
+				<li>
+					<a href="#">Work</a>
+				</li>
+				<li>
+					<a href="#">Outlook</a>
+				</li>
+				<li>
+					<a href="#">Studios</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
     <%= yield %>
+
+	<footer>
+		<h2>Connect With Us.</h2>
+		<div class="locations">
+			<div class="city">
+				<h3>A<span class="highlight">ust</span>in</h3>
+				<p>2612 Hidalgo Street<br>Austin, TX 78702</p>
+				<a href="tel:5127388110" class="tel">(512)-738-8110</a>
+				<a href="#" class="btn email">Email Us</a>
+			</div>
+
+			<div class="city">
+				<h3>Chic<span class="highlight">ago</span> HQ</h3>
+				<p>35 E. Wacker, Suite 1400<br>Chicago, IL 60601</p>
+				<a href="tel:3129820040" class="tel">(312)-982-0040</a>
+				<a href="#" class="btn email">Email Us</a>
+			</div>
+
+			<div class="city">
+				<h3>Los <span class="highlight">Ang</span>eles</h3>
+				<p>1600 Main Street<br>Venice, CA 90291</p>
+				<a href="tel:3103417200" class="tel">(312)-341-7200</a>
+				<a href="#" class="btn email">Email Us</a>
+			</div>
+		</div>
+	</footer>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

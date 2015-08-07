@@ -1,0 +1,67 @@
+// %arrow-down {
+// 	width: 0;
+// 	height: 0;
+// 	border-left: 20px solid transparent;
+// 	border-right: 20px solid transparent;
+// 	border-top: 20px solid #ececec;
+// }
+
+footer {
+	text-align: center;
+	color: #fff;
+
+	h2 {
+		margin-top: 60px;
+		text-align: center;
+
+		// &:after {
+		// 	content: "";
+		// 	@extend %arrow-down;
+		// 	display: inline-block;
+		// 	position: relative;
+		// 	top: 42px;
+		// 	background: url(/images/pattern.png);
+		// }
+	}
+
+	h3 {
+		color: #fff;
+		@extend %reset;
+
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 30px;
+
+		&:after {
+			content: "";
+			width: 40px;
+			height: 2px;
+			background: #fff;
+			display: block;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+	}
+
+	.locations {
+		@extend %clearfix;
+		background: $base-bg;
+		padding: 40px 0;
+	}
+
+	.city {
+		@media all and (min-width: $med-tide) {
+			width: 33.3333%;
+			float: left;
+		}
+
+		.tel {
+			display: block;
+		}
+
+		.email {
+			display: inline-block;
+			margin-top: 20px;
+		}
+	}
+}
