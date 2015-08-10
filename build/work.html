@@ -11,15 +11,15 @@
     <!-- <meta property="fb:page_id" content=""> -->
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "We Design with &#9825;" %></title>
+    <title>Work | MU/DAI</title>
     <meta name="description" content="MU/DAI is a data-driven design firm focused on humanizing digital experiences. Learn more about how our team helps businesses and brands succeed.">
     <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/719666/css/fonts.css" /> -->
 
-    <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="work">
 	<header class="main-header">
 		<a href="/" class="logo">MU/DAI</a>
 		<nav class="site-nav">
@@ -45,7 +45,86 @@
 		</nav>
 	</header>
 
-    <%= yield %>
+    <h1>Work</h1>
+
+<article class="content">
+	<div class="grid">
+		<a href="https://mudai.wufoo.com/forms/zcpdlr1wiba9u/" class="grid-item white-paper">
+			<div class="item-text">
+				<img src="images/white-paper.svg" class="item-icon svg">
+				<h3>The Future of<br>
+					Currency:<br>
+					Financial Experience<br>
+					Products
+				</h3>
+			</div>
+		</a>
+
+		<a href="acw.html" class="grid-item grid-item--width2 case-study">
+			<div class="box">
+				<img src="images/ACW/ACW-Hero-Shot.jpg">
+			</div>
+			<div class="box item-text">
+				<img src="images/dash.svg" class="item-icon svg">
+				<h2>ACW</h2>
+				<h3>Transforming<br>
+					construction through<br>
+					data-driven design
+				</h3>
+			</div>
+		</a>
+
+		<a href="xcor.html" class="grid-item grid-item--height2 case-study">
+			<div class="box">
+				<img src="images/XCOR/XCOR-Hero-shot.jpg">
+			</div>
+			<div class="box item-text">
+				<img src="images/dash.svg" class="item-icon svg">
+				<h2>XCOR</h2>
+				<h3>One giant leap<br>
+					towards practical
+				</h3>
+			</div>
+		</a>
+
+		<a href="woc.html" class="grid-item grid-item--width2 case-study">
+			<div class="box item-text">
+				<img src="images/dash.svg" class="item-icon svg">
+				<h2>Women on Course</h2>
+				<h3>Finding<br>
+					your Swing
+				</h3>
+			</div>
+			<div class="box">
+				<img src="images/WOC/Golfer_Squre.jpg">
+			</div>
+		</a>
+
+		<a href="insite.html" class="grid-item grid-item--height2 case-study">
+			<div class="box">
+				<img src="images/INSITE/INSITE_00.jpg">
+			</div>
+			<div class="box item-text">
+				<img src="images/dash.svg" class="item-icon svg">
+				<h2>INSITE</h2>
+				<h3>Blending Digital<br>
+					and Real World<br>
+					Behavior
+				</h3>
+			</div>
+		</a>
+
+		<a href="https://mudai.wufoo.com/forms/m1bakrtf0vdwt56/" class="grid-item white-paper">
+			<div class="item-text">
+				<img src="images/white-paper.svg" class="item-icon svg">
+				<h3>Practical Innovation<br>
+					in Healthcare
+				</h3>
+			</div>
+		</a>
+
+	</div>
+</article>
 
 	<footer>
 		<div class="locations">

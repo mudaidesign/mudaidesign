@@ -11,15 +11,15 @@
     <!-- <meta property="fb:page_id" content=""> -->
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "We Design with &#9825;" %></title>
+    <title>Women On Course | MU/DAI</title>
     <meta name="description" content="MU/DAI is a data-driven design firm focused on humanizing digital experiences. Learn more about how our team helps businesses and brands succeed.">
     <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/719666/css/fonts.css" /> -->
 
-    <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="woc">
 	<header class="main-header">
 		<a href="/" class="logo">MU/DAI</a>
 		<nav class="site-nav">
@@ -45,7 +45,76 @@
 		</nav>
 	</header>
 
-    <%= yield %>
+    <article class="feature featured-case woc">
+	<div class="title shade">
+		<h1>Women On Course</h1>
+		<p>One giant leap towards practical</p>
+	</div>
+</article>
+
+<article class="content">
+	<div class="grid">
+		<div class="grid-item grid-item--width2-height2 case-study">
+			<div class="item-text">
+				<img src="images/dash.svg" class="item-icon svg">
+				<p>
+					Women On Course provides a non-intimidating introduction to golf combined with business networking opportunities for women. The company is founded on the belief that community, acceptance and fun are the basis of successful golf instruction. This strategy blends course-play and networking events to create an extended experience that keeps players involved and engaged.
+				</p>
+				<p>
+					Women On Course gave MU/DAI the opportunity to create a digital experience that focuses on attracting new players while engaging the existing membership community.
+				</p>
+			</div>
+		</div>
+
+		<div class="grid-item has-item-bg">
+			<img src="images/WOC/Golfer_Squre.jpg" class="item-bg">
+		</div>
+
+		<div class="grid-item has-item-bg">
+			<img src="images/WOC/Group.jpg" class="item-bg">
+		</div>
+
+		<div class="grid-item has-item-bg">
+			<img src="images/WOC/slack_for_ios_upload.jpg" class="item-bg">
+		</div>
+
+		<div class="grid-item grid-item--width2-height2">
+			<div class="item-text">
+				<p>
+					As part of our process, we rely on collaborative and inclusive ideation. Our “co-design” approach includes working with the client to gather as many ideas and insights as quickly as possible. This places the client in the midst of the design activities, with a real role in the development of the solution.
+				</p>
+				<p>
+					Kimberly Cayce, the CMO of Women On Course, worked with us to tailor a series of workshop activities for her and her team. We focused on two key areas of the Women On Course experience: existing strengths that drive membership and extending the reach of educational content through digital experience design.
+				</p>
+			</div>
+		</div>
+
+		<div class="grid-item has-item-bg">
+			<img src="images/WOC/Workshop3.jpg" class="item-bg">
+		</div>
+
+		<div class="grid-item grid-item--width-height-full has-item-bg">
+			<img src="images/WOC/WORKSHOP2.jpg" class="item-bg">
+		</div>
+
+		<div class="grid-item grid-item--width-full">
+			<div class="item-text">
+				<p>Our day-long workshop generated a wealth of insights and ideas, all leading to projects that will build significant value for the Women On Course brand and experience. Our findings are reshaping the brand language through customer experiences on and off the course. We designed revised typographic, color, and image palettes, along with brand tone and an enhanced responsive website that will drive new member acquisition while serving existing members more effectively.</p>
+			</div>
+		</div>
+
+		<div class="grid-item has-item-bg">
+			<img src="images/WOC/Table.jpg" class="item-bg">
+		</div>
+
+		<div class="grid-item grid-item--width2 has-item-bg">
+			<div class="box">
+				<img src="images/WOC/Diagram.jpg" class="item-bg">
+			</div>
+		</div>
+
+	</div>
+</article>
 
 	<footer>
 		<div class="locations">

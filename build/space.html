@@ -11,15 +11,15 @@
     <!-- <meta property="fb:page_id" content=""> -->
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "We Design with &#9825;" %></title>
+    <title>We Design with &#9825;</title>
     <meta name="description" content="MU/DAI is a data-driven design firm focused on humanizing digital experiences. Learn more about how our team helps businesses and brands succeed.">
     <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/719666/css/fonts.css" /> -->
 
-    <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="space">
 	<header class="main-header">
 		<a href="/" class="logo">MU/DAI</a>
 		<nav class="site-nav">
@@ -45,7 +45,52 @@
 		</nav>
 	</header>
 
-    <%= yield %>
+    <h1>Space</h1>
+
+<article class="content">
+	<div class="grid">
+		<div class="grid-item grid-item--width-full item-space">
+			<div class="box-a text">
+				<h3>Explore</h3>
+				<h4>Open Lab</h4>
+				<p>A collaborative space designed to explore new ideas in physical environments</p>
+			</div>
+			<div class="box-b video-embed">
+				<div class="responsive-container">
+				<iframe src="https://player.vimeo.com/video/135703820?title=0&byline=0&badget=0&portrait=0" frameborder="0" badge="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+					<!-- <iframe src="https://player.vimeo.com/video/135703820"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-item grid-item--width-full item-space grid-middle">
+			<div class="box-b text">
+				<h3>Experiment</h3>
+				<h4>Innovation Lab</h4>
+				<p>A hands-on workshop where emerging technology and design breathe life into concepts.</p>
+			</div>
+			<div class="box-a video-embed">
+				<div class="responsive-container">
+					<iframe src="https://player.vimeo.com/video/135513840?title=0&byline=0&badget=0&portrait=0" frameborder="0" badge="0" portrait="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-item grid-item--width-full item-space">
+			<div class="box-a text">
+				<h3>Validate</h3>
+				<h4>Research Lab</h4>
+				<p>A two-room environment that creates realistic conditions for testing with state of the art tools for capturing the moment of experience.</p>
+			</div>
+			<div class="box-b video-embed">
+				<div class="responsive-container">
+					<iframe src="https://player.vimeo.com/video/135698776?title=0&byline=0&badget=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
 
 	<footer>
 		<div class="locations">

@@ -11,15 +11,15 @@
     <!-- <meta property="fb:page_id" content=""> -->
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "We Design with &#9825;" %></title>
+    <title>We Design with &#9825;</title>
     <meta name="description" content="MU/DAI is a data-driven design firm focused on humanizing digital experiences. Learn more about how our team helps businesses and brands succeed.">
     <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/719666/css/fonts.css" /> -->
 
-    <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="index">
 	<header class="main-header">
 		<a href="/" class="logo">MU/DAI</a>
 		<nav class="site-nav">
@@ -45,7 +45,126 @@
 		</nav>
 	</header>
 
-    <%= yield %>
+    <article class="feature main-feature">
+	<div class="title">
+		<h1 class="main-title">MU/DAI | A design firm</h1>
+		<h2>We create experiences for wherever they happen</h2>
+		<p>From the cockpit of an experimental rocket, to the back of your seat in 8A, to wearable tech for construction workers— your tablet, your phone and whatever comes next.</p>
+	</div>
+</article>
+
+<article class="content">
+	<div class="grid">
+
+		<a href="https://mudai.wufoo.com/forms/zcpdlr1wiba9u/" class="grid-item white-paper">
+			<div class="item-text">
+				<img src="images/white-paper.svg" class="item-icon svg">
+				<h3>The Future of<br>
+					Currency:<br>
+					Financial Experience<br>
+					Products
+				</h3>
+			</div>
+		</a>
+
+		<a href="acw.html" class="grid-item grid-item--width2 case-study">
+			<div class="box">
+				<img src="images/ACW/ACW-Hero-Shot.jpg">
+			</div>
+			<div class="box item-text">
+				<img src="images/dash.svg" class="item-icon svg">
+				<h2>ACW</h2>
+				<h3>Transforming<br>
+					construction through<br>
+					data-driven design
+				</h3>
+			</div>
+		</a>
+
+		<a href="xcor.html" class="grid-item grid-item--height2 case-study">
+			<div class="box">
+				<img src="images/XCOR/XCOR-Hero-shot.jpg">
+			</div>
+			<div class="box item-text">
+				<img src="images/dash.svg" class="item-icon svg">
+				<h2>XCOR</h2>
+				<h3>One giant leap<br>
+					towards practical
+				</h3>
+			</div>
+		</a>
+
+		<a href="woc.html" class="grid-item grid-item--width2 case-study">
+			<div class="box item-text">
+				<img src="images/dash.svg" class="item-icon svg">
+				<h2>Women on Course</h2>
+				<h3>Finding<br>
+					your Swing
+				</h3>
+			</div>
+			<div class="box">
+				<img src="images/WOC/Golfer_Squre.jpg">
+			</div>
+		</a>
+
+		<a href="https://twitter.com/mudaidesign/status/628008682698186752" class="grid-item social">
+			<div class="item-text">
+				<img src="images/twitter-bird.svg" class="item-icon svg">
+				<h3>How to be more<br>
+					Innovative in 21st<br>
+					Century Learning
+				</h3>
+			</div>
+		</a>
+
+		<a href="insite.html" class="grid-item grid-item--height2 case-study">
+			<div class="box">
+				<img src="images/INSITE/INSITE_00.jpg">
+			</div>
+			<div class="box item-text">
+				<img src="images/dash.svg" class="item-icon svg">
+				<h2>INSITE</h2>
+				<h3>Blending Digital<br>
+					and Real World<br>
+					Behavior
+				</h3>
+			</div>
+		</a>
+
+		<a href="https://www.linkedin.com/pulse/move-faster-break-more-shanon-marks?trk=prof-post" class="grid-item social">
+			<div class="item-text">
+				<img src="images/linkedin.svg" class="item-icon svg">
+				<h3>Move Faster.<br>
+					Break More.<br>
+				</h3>
+			</div>
+		</a>
+
+		<a href="https://mudai.wufoo.com/forms/m1bakrtf0vdwt56/" class="grid-item white-paper">
+			<div class="item-text">
+				<img src="images/white-paper.svg" class="item-icon svg">
+				<h3>Practical Innovation<br>
+					in Healthcare
+				</h3>
+			</div>
+		</a>
+
+		<a href="https://vimeo.com/135394869" class="grid-item grid-item--width2 video-tile">
+			<div class="box">
+				<img src="images/photos/Timlapse-Tile.jpg">
+			</div>
+			<div class="box item-text">
+				<img src="images/video.svg" class="item-icon svg">
+				<h3>3 days in<br>
+					MU/DAI<br>
+					Innovation Lab
+				</h3>
+			</div>
+		</a>
+
+
+	</div>
+</article>
 
 	<footer>
 		<div class="locations">
