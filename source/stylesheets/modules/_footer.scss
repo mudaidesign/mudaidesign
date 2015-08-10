@@ -31,8 +31,13 @@ footer {
 	.city {
 		padding: 40px 0;
 
+		@media all and (min-width: $med-tide) {
+			padding-top: 80px;
+		}
+
 		&.hq {
 			background: $base-bg;
+
 		}
 
 		.h1 {
@@ -50,8 +55,13 @@ footer {
 
 		.email {
 			display: inline-block;
-			margin-top: 20px;
-			margin-bottom: 40px;
+			margin-top: 40px;
+			margin-bottom: 20px;
+
+			@media all and (min-width: $med-tide) {
+				margin-top: 60px;
+				margin-bottom: 30px;
+			}
 		}
 	}
 
