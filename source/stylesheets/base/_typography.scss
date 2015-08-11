@@ -10,9 +10,9 @@ $body-font: 'Whitney SSm A', 'Whitney SSm B';
 // font-weight: 600; font-style: normal;
 // font-weight: 600; font-style: italic;
 
-* {
-	-webkit-font-smoothing: antialiased;
-}
+// * {
+// 	-webkit-font-smoothing: antialiased;
+// }
 
 @mixin heading-font($color: black, $weight: 900) {
 	font-family: 'Gotham A', 'Gotham B', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
