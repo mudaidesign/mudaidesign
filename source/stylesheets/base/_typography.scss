@@ -14,7 +14,7 @@ $body-font: 'Whitney SSm A', 'Whitney SSm B';
 // 	-webkit-font-smoothing: antialiased;
 // }
 
-@mixin heading-font($color: black, $weight: 900) {
+@mixin heading-font($color: black, $weight: 400) {
 	font-family: 'Gotham A', 'Gotham B', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	color: $color;
 }
@@ -39,7 +39,6 @@ body {
 h1 {
 	@include heading-font;
 	text-transform: uppercase;
-	font-weight: 300;
 	@extend %reset;
 	text-align: center;
 	padding: 120px 0 60px 0;
@@ -54,12 +53,12 @@ h1 {
 }
 
 h2 {
-	@include body-font;
+	@include heading-font;
 	font-size: 2em;
 }
 
 h3 {
-	@include body-font(100);
+	@include heading-font();
 	font-size: 1.5em;
 }
 

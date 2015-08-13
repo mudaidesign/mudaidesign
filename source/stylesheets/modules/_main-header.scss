@@ -9,13 +9,13 @@
 
 	.logo {
 		float: left;
+		@include heading-font($weight: 200);
 		color: white;
-		font-weight: 900;
-		font-size: 1em;
+		font-size: 15px;
+		letter-spacing: 2px;
 	}
 
 	.menu {
-		// float: right;
 		color: white;
 		font-size: 1em;
 	}
