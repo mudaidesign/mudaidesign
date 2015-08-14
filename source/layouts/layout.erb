@@ -13,8 +13,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "We Design with &#9825;" %></title>
     <meta name="description" content="MU/DAI is a data-driven design firm focused on humanizing digital experiences. Learn more about how our team helps businesses and brands succeed.">
-    <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/616946/css/fonts.css" /> -->
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599132/732048/css/fonts.css" />
+
+    <link rel="stylesheet" type="text/css" href="http://cloud.typography.com/7599132/732048/css/fonts.css" />
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
@@ -109,12 +109,12 @@
 
     <script type="text/javascript">
         $('.menu-click').on('click', function() {
-            // event.preventDefault();
+            event.preventDefault();
             $('.menu').removeClass('hide');
         });
 
         $('.close-menu').on('click', function() {
-            // event.preventDefault();
+            event.preventDefault();
             $('.menu').addClass('hide');
         });
     </script>

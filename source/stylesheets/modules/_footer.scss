@@ -21,6 +21,10 @@ footer {
 		}
 	}
 
+	a {
+		color: #fff;
+	}
+
 	.locations {
 		@extend %clearfix;
 		// background: $base-bg;

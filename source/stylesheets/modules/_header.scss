@@ -1,6 +1,6 @@
 .main-header {
 	padding: 20px;
-	background: rgba(0, 0, 0, .4);
+	background: rgba(0, 0, 0, .8);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -9,10 +9,13 @@
 
 	.logo {
 		float: left;
-		@include heading-font($weight: 200);
+		@include heading-font();
 		color: white;
 		font-size: 15px;
 		letter-spacing: 2px;
+		font-weight: 500;
+		position: relative;
+	    top: 3px;
 	}
 
 	.menu {

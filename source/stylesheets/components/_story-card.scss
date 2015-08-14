@@ -1,0 +1,51 @@
+.story-card {
+	display: block;
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 40px;
+	@include border-color(transparent);
+	@extend %clearfix;
+
+	&:hover {
+		@include border-color($case-highlight);
+
+		h3, h4, p {
+			color: $case-highlight;
+		}
+	}
+
+	h4 {
+		@extend %reset;
+	}
+
+	h3 {
+		margin-top: 0;
+	}
+
+	.copy {
+		@media all and (min-width: 600px) {
+			float: left;
+			width: 60%;
+			padding: 40px;
+		}
+	}
+
+	.asset {
+		display: none;
+
+		@media all and (min-width: 600px) {
+			display: block;
+			float: right;
+			width: 40%;
+		}
+	}
+
+	img {
+		float: right;
+		max-width: 100%;
+
+		@media all and (min-width: $med-tide) {
+			max-height: 300px;
+		}
+	}
+}

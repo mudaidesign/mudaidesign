@@ -9,8 +9,10 @@
 
 @import 'components/btn';
 @import 'components/grid-item';
+@import 'components/story-card';
 
-@import 'modules/main-header';
-@import 'modules/site-nav';
+@import 'modules/header';
+@import 'modules/nav';
 @import 'modules/feature';
+@import 'modules/next-stories';
 @import 'modules/footer';
