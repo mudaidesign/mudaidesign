@@ -1,8 +1,15 @@
-// GRID VARIABLES
-$max-width: 1280px;
-$single-col-width: 400px;
-$single-col-height: 400px;
+// GRID ITEM WIDTH
+$max-width: 1080px;
 $gutter: 10px;
+$single-col-width: 270px;
+$card-width: 270px;
+
+// GRID ITEM HEIGHT
+$single-col-height: $single-col-width;
+
+$tall: 270px;
+$grande: 400px;
+$vente: 625px;
 
 // BREAKPOINTS
 $high-tide: 1230px;
@@ -15,3 +22,6 @@ $case-highlight: #EF233C;
 $social-highlight: #4BB3FD;
 $video-highlight: #6766FC;
 $base-bg: #2B2D42;
+
+$external-accent: #084c61;
+$action-accent: #db504a;
