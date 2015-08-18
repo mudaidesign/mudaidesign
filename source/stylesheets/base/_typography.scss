@@ -44,16 +44,15 @@ h1 {
 	@include heading-font;
 	text-transform: uppercase;
 	@extend %reset;
-	text-align: center;
-	padding: 120px 0 60px 0;
-
-	&.main-title {
-		display: none;
-	}
 
 	@media screen and (min-width: $med-tide) {
 		font-size: 3.5em;
 	}
+}
+
+h1.page-title {
+	text-align: center;
+	padding: 120px 0 60px 0;
 }
 
 h2 {

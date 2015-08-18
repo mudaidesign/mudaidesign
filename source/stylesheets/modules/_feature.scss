@@ -1,16 +1,18 @@
 .feature {
-	height: 100vh;
+	// padding: 80px 0;
 
 	.title {
 		padding-left: 20px;
 		padding-right: 20px;
 		color: white;
 		margin: 0 auto;
-		padding-top: 40vh;
+	}
+
+	.main-title {
+		max-width: 830px;
 	}
 
 	h1, h2 {
-		max-width: 1120px;
 		@extend %reset;
 		color: white;
 		margin: 0 auto;
@@ -19,20 +21,15 @@
 	h1 {
 		font-size: 2em;
 		text-align: left;
-		padding: 0;
+		font-weight: 400;
 	}
 
 	h2 {
 		font-size: 2em;
-		font-weight: 400;
-
-		@media all and (min-width: $med-tide) {
-			font-size: 4em;
-		}
+		font-weight: 300;
 	}
 
 	p {
-		max-width: 780px;
 		margin: 0 auto;
 		font-size: 1.5em;
 		line-height: 1.5em;
@@ -41,30 +38,27 @@
 }
 
 .feature.main-feature {
-	background: url(../images/HOMEPAGE.jpg) center center / cover;
-
-	.title {
-		text-align: center;
-	}
+	background: url(../images/HOMEPAGE.jpg) top center / cover;
+	padding: 200px 0;
 }
 
 .feature.featured-case {
 	text-align: left;
 	color: white;
+	padding: 160px 0;
 
 	.title {
 		text-align: left;
+		max-width: 830px;
 	}
 
 	h1 {
-		// font-weight: 300;
 		font-weight: 500;
 
 		@media all and (min-width: $med-tide) {
 			font-size: 1em;
 		}
 	}
-
 
 	h2 {
 		font-size: 1.5em;
@@ -101,17 +95,17 @@
 }
 
 .featured-case.acw {
-	background: url(../images/bg-acw.jpeg) center center / cover;
+	background: url(../images/bg-acw.jpeg) top center / cover;
 }
 
 .featured-case.xcor {
-	background: url(../images/bg-xcor.jpeg) center center / cover;
+	background: url(../images/bg-xcor.jpeg) top center / cover;
 }
 
 .featured-case.insite {
-	background: url(../images/INSITE/INSITE_04.jpg) center center / cover;
+	background: url(../images/INSITE/INSITE_04.jpg) top center / cover;
 }
 
 .featured-case.woc {
-	background: url(../images/WOC/Workshop.jpg) center center / cover;
+	background: url(../images/WOC/Workshop.jpg) top center / cover;
 }
