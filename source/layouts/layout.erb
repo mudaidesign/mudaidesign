@@ -107,15 +107,23 @@
               transitionDuration: '0.1s',
               isFitWidth: true
         });
+
+        $('.grid').masonry({
+              columnWidth: 270,
+              itemSelector: '.card',
+              gutter: 10,
+              transitionDuration: '0.1s',
+              isFitWidth: true
+        });
     </script>
 
     <script type="text/javascript">
-        $('.menu-click').on('click', function() {
+        $('.menu-click').on('click', function(event) {
             event.preventDefault();
             $('.menu').removeClass('hide');
         });
 
-        $('.close-menu').on('click', function() {
+        $('.close-menu').on('click', function(event) {
             event.preventDefault();
             $('.menu').addClass('hide');
         });

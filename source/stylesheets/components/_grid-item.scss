@@ -13,15 +13,16 @@
 	background: #fff;
 	@extend %clearfix;
 	margin-bottom: $gutter;
-	// padding: 20px;
 	position: relative;
 	overflow: hidden;
+	// padding: 20px;
 
 	h2 {
+		@extend %reset;
 		font-size: 12px;
 		text-transform: uppercase;
-		margin-bottom: 20px;
-		margin-top: 30px;
+		// margin-bottom: 20px;
+		// margin-top: 30px;
 		font-weight: 500;
 	}
 
@@ -33,16 +34,17 @@
 	}
 
 	h3 {
-		font-size: 16px;
-		// margin-top: 40px;
+		font-size: 18px;
 	}
 
-	// h4 {
-	// 	text-transform: uppercase;
-	// 	font-size: .8em;
-	// 	margin-top: 4px;
-	// 	margin-bottom: 40px;
-	// }
+	h4 {
+		font-size: 14px;
+	}
+
+	button {
+		// display: inline-block;
+		// margin-top: 40px;
+	}
 }
 
 .box {
@@ -61,6 +63,10 @@
 		max-width: 100%;
 	}
 }
+
+// .box.item-text {
+// 	padding: 40px;
+// }
 
 .grid-item--width2 {
 	width: $single-col-width * 2 + 10;
@@ -162,13 +168,9 @@
 	}
 }
 
-.item-text {
-	padding: 40px;
-}
-
-.grid-item svg {
-	height: 80px;
-}
+// .item-text {
+// 	padding: 20px;
+// }
 
 .item-icon {
 	padding-bottom: 20px;
@@ -187,35 +189,42 @@
 .has-item-bg {
 	h3 {
 		color: #fff;
-		background: rgba(0, 0, 0, .3);
-		padding: 20px;
-	}
-
-	.cls-2, path {
-		stroke: #fff;
-		fill: #fff;
+		// background: rgba(0, 0, 0, .3);
+		// padding: 20px;
 	}
 }
 
 a.grid-item {
-	@include border-color(transparent);
+	// @include border-color(transparent);
 }
 
-.white-paper {
+.grid-item .icon {
+	font-size: 36px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
 
-	.item-icon {
-		@include highlight-color($doc-highlight);
+.grid-item.action {
+	background: $action-accent;
+	color: #fff;
+
+	h3 {
+		color: #fff;
 	}
+}
+
+.grid-item .ion-document {
+	@include highlight-color($doc-highlight);
 }
 
 a.white-paper {
 	&:hover {
-		@include border-color($doc-highlight);
+		// @include border-color($doc-highlight);
 		background: $doc-highlight;
 
-		path {
-			stroke: #fff;
-			fill: #fff;
+		.ion-document {
+			@include highlight-color(#fff);
+			color: #fff;
 		}
 
 		h3 {
@@ -237,7 +246,7 @@ a.white-paper {
 
 a.case-study {
 	&:hover {
-		@include border-color($case-highlight);
+		// @include border-color($case-highlight);
 
 		h2, h3 {
 			color: $case-highlight;
@@ -253,16 +262,11 @@ a.case-study {
 
 a.social {
 	&:hover {
-		@include border-color($social-highlight);
+		// @include border-color($social-highlight);
 		background: $social-highlight;
 
 		h2, h3 {
 			color: #fff;
-		}
-
-		path {
-			stroke: #fff;
-			fill: #fff;
 		}
 
 		.item-icon {
@@ -281,7 +285,7 @@ a.social {
 
 a.instagram {
 	&:hover {
-		@include border-color($social-highlight);
+		// @include border-color($social-highlight);
 	}
 }
 
@@ -294,7 +298,7 @@ a.instagram {
 
 a.video-tile {
 	&:hover {
-		@include border-color($video-highlight);
+		// @include border-color($video-highlight);
 
 		h2, h3 {
 			color: $video-highlight;
