@@ -1,0 +1,27 @@
+.case-study {
+	&.content {
+		background: #fff;
+	}
+
+	.banner {
+		text-align: center;
+	}
+
+	.banner img {
+		max-width: 100%;
+		display: inline-block;
+	}
+
+	p {
+		padding: 60px 10%;
+		margin: 0;
+
+		@media all and (min-width: $med-tide) {
+			padding: 60px 20%;
+		}
+	}
+
+	.end-cap {
+		padding-bottom: 80px;
+	}
+}
