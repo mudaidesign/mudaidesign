@@ -67,9 +67,25 @@
 	}
 }
 
-// .box.item-text {
-// 	padding: 40px;
-// }
+// v2 MASONRY GRID
+
+.grid-item-tall {
+	height: $tall;
+	width: $card-width;
+}
+
+.grid-item-grande {
+	height: $grande;
+	width: $card-width;
+}
+
+.grid-item-vente {
+	height: $vente;
+	width: $card-width;
+}
+
+
+// LEGACY MASONRY GRID — v1
 
 .grid-item--width2 {
 	width: $single-col-width * 2 + 10;
@@ -133,47 +149,9 @@
 		width: $single-col-width;
 		height: 240px;
 	}
-
-	// &.oculus {
-	// 	height: 660px;
-
-	// 	@media all and (max-width: $high-tide) {
-	// 		height: 440px
-	// 	}
-
-	// 	@media all and (max-width: $med-tide) {
-	// 		height: 220px;
-	// 	}
-	// }
-
-	// &.insite-banner {
-	// 	height: 680px;
-
-	// 	@media all and (max-width: $high-tide) {
-	// 		height: 450px
-	// 	}
-
-	// 	@media all and (max-width: $med-tide) {
-	// 		height: 220px;
-	// 	}
-	// }
-
-	// &.acw-worker {
-	// 	height: 680px;
-
-	// 	@media all and (max-width: $high-tide) {
-	// 		height: 450px
-	// 	}
-
-	// 	@media all and (max-width: $med-tide) {
-	// 		height: 220px;
-	// 	}
-	// }
 }
 
-// .item-text {
-// 	padding: 20px;
-// }
+// Card full background and icon formatting
 
 .item-icon {
 	padding-bottom: 20px;
@@ -190,6 +168,10 @@
 }
 
 .has-item-bg {
+	img {
+		max-width: 100%;
+	}
+
 	h3 {
 		color: #fff;
 		// background: rgba(0, 0, 0, .3);
