@@ -1,13 +1,12 @@
 @mixin btn {
-	border: 2px solid #fff;
+	border: 2px solid $base-bg;
 	padding: 5px 30px;
-	color: #fff;
 	text-decoration: none;
 	display: inline-block;
+	font-size: 12px;
+	font-weight: 400;
 }
 
 .btn {
 	@include btn;
-	// font-size: 18px;
-	// font-weight: 600;
 }

@@ -15,11 +15,11 @@
 
 	a {
 		color: #fff;
+		padding-bottom: 20px;
 	}
 
 	li a:hover {
 		border-bottom: 4px solid #fff;
-		padding-bottom: 20px;
 	}
 
 	.menu {
@@ -34,9 +34,22 @@
 	    overflow: scroll;
 	}
 
-	.menu-click {
-		img {
-			width: 24px;
+	.close-menu a:hover {
+		border-bottom: none;
+	}
+
+	.contact {
+
+		a {
+			text-align: center;
+			display: block;
+			font-size: 12px;
+			text-decoration: underline;
+			padding-bottom: 6px;
+		}
+
+		a:hover {
+			border-bottom: none;
 		}
 	}
 

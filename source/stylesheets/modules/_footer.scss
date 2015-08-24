@@ -1,90 +1,107 @@
 footer {
-	text-align: center;
-	color: #fff;
+	max-width: 270px;
+	margin: 0 auto;
+	border-top: 3px solid $base-bg;
+	padding-top: 50px;
 
-	h3 {
-		color: #fff;
-		@extend %reset;
-
-		text-transform: uppercase;
-		text-align: center;
-		margin-bottom: 30px;
-
-		&:after {
-			content: "";
-			width: 40px;
-			height: 2px;
-			background: #fff;
-			display: block;
-			margin: 0 auto;
-			margin-top: 10px;
-		}
-	}
-
-	a {
-		color: #fff;
-
-		&:hover, &:active, &:focus {
-			color: #fff;
-		}
-	}
-
-	.locations {
-		@extend %clearfix;
-		// background: $base-bg;
-		background: #1b1c21;
-		margin-top: 40px;
+	@media all and (min-width: $med-tide) {
+		max-width: 830px;
 	}
 
 	.city {
-		padding: 40px 0;
+		margin-bottom: 40px;
+		text-align: center;
+		position: relative;
 
 		@media all and (min-width: $med-tide) {
-			padding-top: 80px;
-		}
-
-		&.hq {
-			background: $base-bg;
-
-		}
-
-		.h1 {
-			background: #2b2c42;
-		}
-
-		@media all and (min-width: $med-tide) {
-			width: 33.3333%;
+			width: 33.333%;
 			float: left;
+			margin-bottom: 0;
 		}
+	}
 
-		.tel {
-			display: block;
+	h3 {
+		@extend %reset;
+		font-weight: 400;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	.hq-title {
+		position: absolute;
+		top: -10px;
+	}
+
+	.hq {
+		position: relative;
+		top: -20px;
+	}
+
+	.hq-title {
+		@extend %reset;
+		padding: 0;
+		font-size: 10px;
+		position: relative;
+		top: -20px;
+	}
+
+	p {
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+	.tel {
+		display: inline-block;
+		margin-top: 10px;
+	}
+
+	.email {
+		background: #fff;
+		margin-top: 20px;
+
+		&:hover {
+			background: rgba(255, 255, 255, .6);
 		}
+	}
 
-		.email {
-			display: inline-block;
-			margin-top: 40px;
-			margin-bottom: 20px;
+	.aus {
+		margin-bottom: 70px;
 
-			@media all and (min-width: $med-tide) {
-				margin-top: 60px;
-				margin-bottom: 30px;
-				padding: 20px 40px;
-			}
+		@media all and (min-width: $med-tide) {
+			margin-bottom: 0;
 		}
 	}
 
 	.social {
-		background: white;
+		position: relative;
 		text-align: center;
+		font-size: 22px;
+		margin-bottom: 20px;
 
 		a {
 			display: inline-block;
-			margin: 10px 20px;
+			margin: 0 20px;
 		}
+	}
 
-		path, .cls-1 {
-			fill: #2b2c42 !important;
+	.social:before, .social:after {
+		@media all and (min-width: $med-tide) {
+			content:'';
+			border-bottom: 2px solid #000;
+			width: 33%;
+			display: block;
+			top: 12px;
 		}
+	}
+
+	.social:before {
+		position: absolute;
+		left: 0;
+	}
+
+	.social:after {
+		position: absolute;
+		right: 0;
 	}
 }
