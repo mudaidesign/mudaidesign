@@ -11,15 +11,3 @@ body {
 		display: none;
 	}
 }
-
-
-// QUICK SVG HACK
-.cls-1 {
-	fill: transparent !important;
-	stroke-width: 1px !important;
-	overflow: visible !important;
-}
-
-svg {
-	overflow: visible !important;
-}

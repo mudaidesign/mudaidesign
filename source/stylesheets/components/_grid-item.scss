@@ -15,21 +15,20 @@
 	margin-bottom: $gutter;
 	position: relative;
 	overflow: hidden;
-	// padding: 20px;
+
+	h2, h3, h4 {
+		@extend %reset;
+		position: relative;
+		z-index: 10;
+	}
 
 	h2 {
-		@extend %reset;
 		font-size: 12px;
 		text-transform: uppercase;
-		// margin-bottom: 20px;
-		// margin-top: 30px;
 		font-weight: 500;
 	}
 
 	h3, h4 {
-		@extend %reset;
-		position: relative;
-		z-index: 10;
 		font-weight: 300;
 	}
 
@@ -135,41 +134,41 @@
 		height: 240px;
 	}
 
-	&.oculus {
-		height: 660px;
+	// &.oculus {
+	// 	height: 660px;
 
-		@media all and (max-width: $high-tide) {
-			height: 440px
-		}
+	// 	@media all and (max-width: $high-tide) {
+	// 		height: 440px
+	// 	}
 
-		@media all and (max-width: $med-tide) {
-			height: 220px;
-		}
-	}
+	// 	@media all and (max-width: $med-tide) {
+	// 		height: 220px;
+	// 	}
+	// }
 
-	&.insite-banner {
-		height: 680px;
+	// &.insite-banner {
+	// 	height: 680px;
 
-		@media all and (max-width: $high-tide) {
-			height: 450px
-		}
+	// 	@media all and (max-width: $high-tide) {
+	// 		height: 450px
+	// 	}
 
-		@media all and (max-width: $med-tide) {
-			height: 220px;
-		}
-	}
+	// 	@media all and (max-width: $med-tide) {
+	// 		height: 220px;
+	// 	}
+	// }
 
-	&.acw-worker {
-		height: 680px;
+	// &.acw-worker {
+	// 	height: 680px;
 
-		@media all and (max-width: $high-tide) {
-			height: 450px
-		}
+	// 	@media all and (max-width: $high-tide) {
+	// 		height: 450px
+	// 	}
 
-		@media all and (max-width: $med-tide) {
-			height: 220px;
-		}
-	}
+	// 	@media all and (max-width: $med-tide) {
+	// 		height: 220px;
+	// 	}
+	// }
 }
 
 // .item-text {
@@ -198,14 +197,12 @@
 	}
 }
 
-a.grid-item {
-	// @include border-color(transparent);
-}
-
 .grid-item .icon {
 	font-size: 36px;
 	display: inline-block;
 	margin-bottom: 20px;
+	position: relative;
+	z-index: 10;
 }
 
 .grid-item.action {
@@ -247,7 +244,6 @@ a.white-paper {
 }
 
 .case-study {
-
 	.item-icon {
 		@include highlight-color($case-highlight);
 	}
@@ -294,19 +290,19 @@ a.social {
 	}
 }
 
-.instagram {
-	border-color: transparent;
+// .instagram {
+// 	border-color: transparent;
 
-	.item-icon {
-		@include highlight-color($social-highlight);
-	}
-}
+// 	.item-icon {
+// 		@include highlight-color($social-highlight);
+// 	}
+// }
 
-a.instagram {
-	&:hover {
-		// @include border-color($social-highlight);
-	}
-}
+// a.instagram {
+// 	&:hover {
+// 		// @include border-color($social-highlight);
+// 	}
+// }
 
 .video-tile {
 
