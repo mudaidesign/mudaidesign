@@ -72,6 +72,14 @@ h4 {
 	font-size: 1em;
 }
 
+a {
+  -webkit-transition: color .2s ease-out, background .2s ease-in;
+	 -moz-transition: color .2s ease-out, background .2s ease-in;
+	  -ms-transition: color .2s ease-out, background .2s ease-in;
+	   -o-transition: color .2s ease-out, background .2s ease-in;
+	 	  transition: color .2s ease-out, background .2s ease-in;
+}
+
 a, a:hover, a:visited, a:focus {
 	color: black;
 	text-decoration: none;

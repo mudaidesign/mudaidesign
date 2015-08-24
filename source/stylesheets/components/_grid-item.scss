@@ -47,6 +47,10 @@
 	}
 }
 
+.item-text {
+	padding: 20px;
+}
+
 .box {
 	height: 100%;
 	width: 50%;
@@ -229,6 +233,11 @@ a.white-paper {
 
 		h3 {
 			color: #fff;
+			  -webkit-transition: color .2s ease-out, background .2s ease-in;
+				 -moz-transition: color .2s ease-out, background .2s ease-in;
+				  -ms-transition: color .2s ease-out, background .2s ease-in;
+				   -o-transition: color .2s ease-out, background .2s ease-in;
+				 	  transition: color .2s ease-out, background .2s ease-in;
 		}
 
 		.item-icon {
@@ -250,6 +259,11 @@ a.case-study {
 
 		h2, h3 {
 			color: $case-highlight;
+			  -webkit-transition: color .2s ease-out, background .2s ease-in;
+				 -moz-transition: color .2s ease-out, background .2s ease-in;
+				  -ms-transition: color .2s ease-out, background .2s ease-in;
+				   -o-transition: color .2s ease-out, background .2s ease-in;
+				 	  transition: color .2s ease-out, background .2s ease-in;
 		}
 	}
 }
@@ -267,6 +281,11 @@ a.social {
 
 		h2, h3 {
 			color: #fff;
+			  -webkit-transition: color .2s ease-out, background .2s ease-in;
+				 -moz-transition: color .2s ease-out, background .2s ease-in;
+				  -ms-transition: color .2s ease-out, background .2s ease-in;
+				   -o-transition: color .2s ease-out, background .2s ease-in;
+				 	  transition: color .2s ease-out, background .2s ease-in;
 		}
 
 		.item-icon {
@@ -302,6 +321,11 @@ a.video-tile {
 
 		h2, h3 {
 			color: $video-highlight;
+			  -webkit-transition: color .2s ease-out, background .2s ease-in;
+				 -moz-transition: color .2s ease-out, background .2s ease-in;
+				  -ms-transition: color .2s ease-out, background .2s ease-in;
+				   -o-transition: color .2s ease-out, background .2s ease-in;
+				 	  transition: color .2s ease-out, background .2s ease-in;
 		}
 	}
 }
