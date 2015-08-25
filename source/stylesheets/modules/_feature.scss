@@ -6,6 +6,10 @@
 		padding-right: 20px;
 		color: white;
 		margin: 0 auto;
+
+		@media all and (min-width: $med-tide) {
+			padding-left: 0;
+		}
 	}
 
 	.main-title {
@@ -108,4 +112,29 @@
 
 .featured-case.woc {
 	background: url(../images/WOC/Workshop.jpg) top center / cover;
+}
+
+.feature.white-paper {
+	background: $action-accent;
+
+	.title {
+		padding: 160px 20px 100px;
+		max-width: 830px;
+
+		@media all and (min-width: $med-tide) {
+		    padding: 170px 0 120px;
+		}
+	}
+
+	h1 {
+		font-weight: 300;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #fff;
+	}
+
+	p {
+		font-size: 12px;
+		@extend %reset;
+		padding-top: 20px;
+	}
 }

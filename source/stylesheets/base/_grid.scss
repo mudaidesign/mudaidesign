@@ -14,8 +14,9 @@
 }
 
 .container {
-	max-width: 960px;
+	max-width: 839px;
 	margin: 0 auto;
+  @extend %clearfix;
 }
 
 // GENERIC GRID SYSTEM

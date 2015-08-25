@@ -7,10 +7,10 @@
 	@extend %clearfix;
 
 	&:hover {
-		@include border-color($case-highlight);
+		@include border-color($action-accent);
 
 		h3, h4, p {
-			color: $case-highlight;
+			color: $action-accent;
 		}
 	}
 

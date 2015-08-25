@@ -7,6 +7,7 @@
 @import 'base/global';
 @import 'base/typography';
 @import 'base/grid';
+@import 'base/form';
 
 @import 'components/grid-item';
 @import 'components/story-card';
@@ -16,4 +17,5 @@
 @import 'modules/feature';
 @import 'modules/next-stories';
 @import 'modules/case-study';
+@import 'modules/sign-up';
 @import 'modules/footer';
