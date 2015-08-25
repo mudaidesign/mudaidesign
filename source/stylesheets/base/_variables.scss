@@ -5,9 +5,10 @@ $single-col-width: 270px;
 $card-width: 270px;
 
 // GRID ITEM HEIGHT
-$single-col-height: $single-col-width;
+$single-col-height: $card-width;
 
-$tall: 270px;
+$short: 200px;
+$tall: 320px;
 $grande: 400px;
 $vente: 625px;
 
@@ -21,7 +22,7 @@ $doc-highlight: #FFAA07;
 $case-highlight: #EF233C;
 $social-highlight: #4BB3FD;
 $video-highlight: #6766FC;
-$base-bg: #2B2D42;
 
+$base-bg: #2B2D42;
 $external-accent: #084c61;
 $action-accent: #db504a;

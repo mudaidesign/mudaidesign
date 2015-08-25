@@ -59,10 +59,8 @@ footer {
 	.email {
 		background: #fff;
 		margin-top: 20px;
-
-		&:hover {
-			background: rgba(255, 255, 255, .6);
-		}
+		@include btn($base-color: $base-bg, $hover-bg: rgba(255, 255, 255, .6));
+		font-size: 16px;
 	}
 
 	.aus {
@@ -106,6 +104,6 @@ footer {
 	}
 }
 
-.work footer, .space footer {
+.work footer, .space footer, .outlook footer {
 	margin-top: 100px;
 }

@@ -1,19 +1,11 @@
-@mixin highlight-color($color) {
-	border-bottom: 4px solid $color;
-}
-
-@mixin border-color($color) {
-	border: 4px solid $color;
-}
-
 .grid-item {
 	float: left;
 	width: $single-col-width;
-	height: $single-col-height;
+	height: $short;
 	background: #fff;
 	@extend %clearfix;
 	margin-bottom: $gutter;
-	position: relative;
+	// position: relative;
 	overflow: hidden;
 
 	h2, h3, h4 {
@@ -40,30 +32,12 @@
 		font-size: 14px;
 	}
 
-	button {
-		// display: inline-block;
-		// margin-top: 40px;
-	}
-}
-
-.item-text {
-	padding: 20px;
-}
-
-.box {
-	height: 100%;
-	width: 50%;
-	float: left;
-	overflow: hidden;
-
-	@media all and (max-width: $high-tide) {
-		float: none;
-		width: 100%;
-		height: 50%;
-	}
-
-	img {
-		max-width: 100%;
+	.icon {
+		font-size: 36px;
+		display: inline-block;
+		margin-bottom: 20px;
+		position: relative;
+		z-index: 10;
 	}
 }
 
@@ -85,43 +59,7 @@
 }
 
 
-// LEGACY MASONRY GRID — v1
-
-.grid-item--width2 {
-	width: $single-col-width * 2 + 10;
-	height: $single-col-height;
-
-	@media all and (max-width: $high-tide) {
-		width: $single-col-width;
-		height: $single-col-height * 2;
-	}
-}
-
-.grid-item--width2.full-text {
-	@media all and (min-width: $high-tide) {
-		width: 790px;
-	}
-}
-
-.grid-item--height2 {
-	width: $single-col-width;
-	height: $single-col-height * 2 + 10;
-
-	.box {
-		width: 100%;
-		height: 50%;
-	}
-}
-
-.grid-item--width2-height2 {
-	width: $single-col-width * 2 + 10;
-	height: $single-col-height * 2 + 10;
-
-	@media all and (max-width: $med-tide) {
-		width: $single-col-width;
-		height: $single-col-height;
-	}
-}
+// LEGACY FOR SPACE PAGE LAYOUT
 
 .grid-item--width-full {
 	width: $single-col-width * 3 + 20px;
@@ -136,178 +74,6 @@
 	}
 }
 
-.grid-item--width-height-full {
-	width: $single-col-width * 3 + 20px;
-	height: 720px;
-
-	@media all and (max-width: $high-tide) {
-		width: $single-col-width * 2 + 10;
-		height: 480px
-	}
-
-	@media all and (max-width: $med-tide) {
-		width: $single-col-width;
-		height: 240px;
-	}
-}
-
-// Card full background and icon formatting
-
-.item-icon {
-	padding-bottom: 20px;
-	position: relative;
-	z-index: 10;
-}
-
-.item-bg {
-	width: 100%;
-	position: absolute;
-	z-index: 0;
-	top: 0;
-	left: 0;
-}
-
-.has-item-bg {
-	img {
-		max-width: 100%;
-	}
-
-	h3 {
-		color: #fff;
-		// background: rgba(0, 0, 0, .3);
-		// padding: 20px;
-	}
-}
-
-.grid-item .icon {
-	font-size: 36px;
-	display: inline-block;
-	margin-bottom: 20px;
-	position: relative;
-	z-index: 10;
-}
-
-.grid-item.action {
-	background: $action-accent;
-	color: #fff;
-
-	h3 {
-		color: #fff;
-	}
-}
-
-.grid-item .ion-document {
-	@include highlight-color($doc-highlight);
-}
-
-a.white-paper {
-	&:hover {
-		// @include border-color($doc-highlight);
-		background: $doc-highlight;
-
-		.ion-document {
-			@include highlight-color(#fff);
-			color: #fff;
-		}
-
-		h3 {
-			color: #fff;
-			  -webkit-transition: color .2s ease-out, background .2s ease-in;
-				 -moz-transition: color .2s ease-out, background .2s ease-in;
-				  -ms-transition: color .2s ease-out, background .2s ease-in;
-				   -o-transition: color .2s ease-out, background .2s ease-in;
-				 	  transition: color .2s ease-out, background .2s ease-in;
-		}
-
-		.item-icon {
-			@include highlight-color(#fff);
-		}
-	}
-}
-
-.case-study {
-	.item-icon {
-		@include highlight-color($case-highlight);
-	}
-}
-
-a.case-study {
-	&:hover {
-		// @include border-color($case-highlight);
-
-		h2, h3 {
-			color: $case-highlight;
-			  -webkit-transition: color .2s ease-out, background .2s ease-in;
-				 -moz-transition: color .2s ease-out, background .2s ease-in;
-				  -ms-transition: color .2s ease-out, background .2s ease-in;
-				   -o-transition: color .2s ease-out, background .2s ease-in;
-				 	  transition: color .2s ease-out, background .2s ease-in;
-		}
-	}
-}
-
-.social {
-	.item-icon {
-		@include highlight-color($social-highlight);
-	}
-}
-
-a.social {
-	&:hover {
-		// @include border-color($social-highlight);
-		background: $social-highlight;
-
-		h2, h3 {
-			color: #fff;
-			  -webkit-transition: color .2s ease-out, background .2s ease-in;
-				 -moz-transition: color .2s ease-out, background .2s ease-in;
-				  -ms-transition: color .2s ease-out, background .2s ease-in;
-				   -o-transition: color .2s ease-out, background .2s ease-in;
-				 	  transition: color .2s ease-out, background .2s ease-in;
-		}
-
-		.item-icon {
-			@include highlight-color(#fff);
-		}
-	}
-}
-
-// .instagram {
-// 	border-color: transparent;
-
-// 	.item-icon {
-// 		@include highlight-color($social-highlight);
-// 	}
-// }
-
-// a.instagram {
-// 	&:hover {
-// 		// @include border-color($social-highlight);
-// 	}
-// }
-
-.video-tile {
-
-	.item-icon {
-		@include highlight-color($video-highlight);
-	}
-}
-
-a.video-tile {
-	&:hover {
-		// @include border-color($video-highlight);
-
-		h2, h3 {
-			color: $video-highlight;
-			  -webkit-transition: color .2s ease-out, background .2s ease-in;
-				 -moz-transition: color .2s ease-out, background .2s ease-in;
-				  -ms-transition: color .2s ease-out, background .2s ease-in;
-				   -o-transition: color .2s ease-out, background .2s ease-in;
-				 	  transition: color .2s ease-out, background .2s ease-in;
-		}
-	}
-}
-
 .item-space {
 	padding: 0;
 
@@ -317,7 +83,6 @@ a.video-tile {
 	}
 
 	h4 {
-		// text-transform: uppercase;
 		font-size: .8em;
 		margin-top: 4px;
 		margin-bottom: 40px;
@@ -337,7 +102,6 @@ a.video-tile {
 
 	.box-b {
 		float: right;
-	    // height: 100%;
 
 		@media all and (max-width: $high-tide) {
 			float: none;
@@ -406,3 +170,234 @@ a.video-tile {
 		height: $single-col-height;
 	}
 }
+
+// CARD FORMATTING
+
+.item-text {
+	padding: 20px;
+}
+
+.item-bg {
+	width: 100%;
+    height: 100%;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+}
+
+.has-item-bg {
+	img {
+		max-width: 100%;
+	}
+
+	h3 {
+		color: #fff;
+	}
+}
+
+// INDIVIDUAL CARD TYPES
+
+.grid-item.white-paper {
+	@include card($bg-color: $action-accent, $font-color: #fff);
+
+	.btn {
+		@include btn($base-color: #fff, $hover-color: $action-accent, $hover-bg: #fff);
+		font-size: 16px;
+	    position: absolute;
+	    bottom: 50px;
+	    left: 64px;
+	}
+}
+
+.grid-item.social {
+	@include card($bg-color: $external-accent, $font-color: #fff);
+
+	&:hover {
+		@include card-hover($bg-color: #fff, $font-color: $external-accent);
+	}
+}
+
+.grid-item.vimeo {
+	.btn {
+		@include btn($base-color: #fff, $hover-color: $external-accent, $hover-bg: #fff);
+		font-size: 16px;
+	    position: absolute;
+	    bottom: 50px;
+	    left: 78px;
+	}
+}
+
+.grid-item.case-study {
+	h2 {
+		color: $action-accent;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+// LEGACY MASONRY GRID — v1
+
+// .grid-item--width2 {
+// 	width: $single-col-width * 2 + 10;
+// 	height: $single-col-height;
+
+// 	@media all and (max-width: $high-tide) {
+// 		width: $single-col-width;
+// 		height: $single-col-height * 2;
+// 	}
+// }
+
+// .grid-item--width2.full-text {
+// 	@media all and (min-width: $high-tide) {
+// 		width: 790px;
+// 	}
+// }
+
+// .grid-item--height2 {
+// 	width: $single-col-width;
+// 	height: $single-col-height * 2 + 10;
+
+// 	.box {
+// 		width: 100%;
+// 		height: 50%;
+// 	}
+// }
+
+// .grid-item--width2-height2 {
+// 	width: $single-col-width * 2 + 10;
+// 	height: $single-col-height * 2 + 10;
+
+// 	@media all and (max-width: $med-tide) {
+// 		width: $single-col-width;
+// 		height: $single-col-height;
+// 	}
+// }
+
+// .grid-item--width-height-full {
+// 	width: $single-col-width * 3 + 20px;
+// 	height: 720px;
+
+// 	@media all and (max-width: $high-tide) {
+// 		width: $single-col-width * 2 + 10;
+// 		height: 480px
+// 	}
+
+// 	@media all and (max-width: $med-tide) {
+// 		width: $single-col-width;
+// 		height: 240px;
+// 	}
+// }
+
+// .box {
+// 	height: 100%;
+// 	width: 50%;
+// 	float: left;
+// 	overflow: hidden;
+
+// 	@media all and (max-width: $high-tide) {
+// 		float: none;
+// 		width: 100%;
+// 		height: 50%;
+// 	}
+
+// 	img {
+// 		max-width: 100%;
+// 	}
+// }
+
+// .grid-item.white-paper {
+// 	&:hover {
+// 		background: #fff;
+
+// 		.ion-document {
+// 			color: $action-accent;
+// 		}
+
+// 		h3 {
+// 			color: $action-accent;
+// 			  -webkit-transition: color .2s ease-out, background .2s ease-in;
+// 				 -moz-transition: color .2s ease-out, background .2s ease-in;
+// 				  -ms-transition: color .2s ease-out, background .2s ease-in;
+// 				   -o-transition: color .2s ease-out, background .2s ease-in;
+// 				 	  transition: color .2s ease-out, background .2s ease-in;
+// 		}
+// 	}
+// }
+
+// .case-study {
+// 	.item-icon {
+// 		@include highlight-color($case-highlight);
+// 	}
+// }
+
+// a.case-study {
+// 	&:hover {
+// 		// @include border-color($case-highlight);
+
+// 		h2, h3 {
+// 			color: $case-highlight;
+// 			  -webkit-transition: color .2s ease-out, background .2s ease-in;
+// 				 -moz-transition: color .2s ease-out, background .2s ease-in;
+// 				  -ms-transition: color .2s ease-out, background .2s ease-in;
+// 				   -o-transition: color .2s ease-out, background .2s ease-in;
+// 				 	  transition: color .2s ease-out, background .2s ease-in;
+// 		}
+// 	}
+// }
+
+// .social {
+// 	.item-icon {
+// 		@include highlight-color($social-highlight);
+// 	}
+// }
+
+// a.social {
+// 	&:hover {
+// 		// @include border-color($social-highlight);
+// 		background: $social-highlight;
+
+// 		h2, h3 {
+// 			color: #fff;
+// 			  -webkit-transition: color .2s ease-out, background .2s ease-in;
+// 				 -moz-transition: color .2s ease-out, background .2s ease-in;
+// 				  -ms-transition: color .2s ease-out, background .2s ease-in;
+// 				   -o-transition: color .2s ease-out, background .2s ease-in;
+// 				 	  transition: color .2s ease-out, background .2s ease-in;
+// 		}
+
+// 		.item-icon {
+// 			@include highlight-color(#fff);
+// 		}
+// 	}
+// }
+
+// .video-tile {
+
+// 	.item-icon {
+// 		@include highlight-color($video-highlight);
+// 	}
+// }
+
+// a.video-tile {
+// 	&:hover {
+// 		// @include border-color($video-highlight);
+
+// 		h2, h3 {
+// 			color: $video-highlight;
+// 			  -webkit-transition: color .2s ease-out, background .2s ease-in;
+// 				 -moz-transition: color .2s ease-out, background .2s ease-in;
+// 				  -ms-transition: color .2s ease-out, background .2s ease-in;
+// 				   -o-transition: color .2s ease-out, background .2s ease-in;
+// 				 	  transition: color .2s ease-out, background .2s ease-in;
+// 		}
+// 	}
+// }

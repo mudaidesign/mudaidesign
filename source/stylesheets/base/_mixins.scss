@@ -1,0 +1,55 @@
+@mixin btn($base-color: $base-bg, $background: transparent, $hover-color: #000, $hover-bg: #000) {
+	border: 1px solid $base-color;
+	padding: 10px 30px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 300;
+	background: $background;
+	color: $base-color;
+	-webkit-transition: all .2s ease-in-out;
+	   -moz-transition: all .2s ease-in-out;
+		 -o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+
+	&:hover {
+		color: $hover-color;
+		background: $hover-bg;
+	}
+}
+
+@mixin highlight-color($color) {
+	border-bottom: 4px solid $color;
+}
+
+@mixin border-color($color) {
+	border: 4px solid $color;
+}
+
+@mixin card($bg-color: #fff, $font-color: #000) {
+	background: $bg-color;
+	color: $font-color;
+
+	h3 {
+		color: $font-color;
+	}
+
+	.icon {
+		// @include highlight-color($font-color);
+		color: $font-color;
+	}
+}
+
+@mixin card-hover($bg-color: #fff, $font-color: #000) {
+	background: $bg-color;
+	color: $font-color;
+
+	h3 {
+		color: $font-color;
+	}
+
+	.icon {
+		// @include highlight-color($font-color);
+		color: $font-color;
+	}
+}
