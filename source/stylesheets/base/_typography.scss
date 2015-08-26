@@ -27,7 +27,7 @@ $body-font: 'Whitney SSm A', 'Whitney SSm B';
 }
 
 body {
-	@include body-font($weight: 300);
+	@include body-font($weight: 400);
 	font-size: 12px;
 
 	@media screen and (min-width: 720px) {

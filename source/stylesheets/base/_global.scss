@@ -1,3 +1,7 @@
+*, *:after, *:before, html {
+	-webkit-font-smoothing: antialiased;
+}
+
 body {
 	background: url(../images/base/pattern.png);
 }
