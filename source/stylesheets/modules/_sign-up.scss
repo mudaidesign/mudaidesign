@@ -2,6 +2,10 @@
 	background: #fff;
 	padding: 0 20px;
 
+	@media all and (min-width: $med-tide) {
+		padding: 60px 20px;
+	}
+
 	p:first-of-type {
 		margin-top: 0;
 		padding-top: 60px;

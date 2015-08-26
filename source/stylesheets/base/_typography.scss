@@ -42,7 +42,7 @@ p {
 
 h1 {
 	@include heading-font;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	@extend %reset;
 
 	@media screen and (min-width: $med-tide) {
@@ -53,6 +53,7 @@ h1 {
 h1.page-title {
 	text-align: center;
 	padding: 120px 0 60px 0;
+	text-transform: uppercase;
 }
 
 h2 {

@@ -13,11 +13,12 @@
 	}
 
 	p {
-		padding: 60px 10%;
+		padding: 10%;
 		margin: 0;
 
 		@media all and (min-width: $med-tide) {
-			padding: 60px 20%;
+			padding: 12%;
+			font-size: 20px;
 		}
 	}
 
