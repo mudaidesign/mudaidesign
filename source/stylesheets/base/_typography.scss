@@ -76,6 +76,7 @@ h4 {
 }
 
 a {
+  @include body-font($weight: 400);
   -webkit-transition: color .2s ease-out, background .2s ease-in;
 	 -moz-transition: color .2s ease-out, background .2s ease-in;
 	  -ms-transition: color .2s ease-out, background .2s ease-in;
