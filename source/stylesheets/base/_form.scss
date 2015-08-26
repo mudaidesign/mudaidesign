@@ -1,9 +1,9 @@
 input[type="text"], input[type="email"], input[type="tel"] {
-	border: 1px solid $highlight;
+	border: 1px solid #ccc;
 	padding: 10px;
 
 	&:focus {
 		outline: none;
-		border: 1px solid $neutral;
+		border: 1px solid $external-accent;
 	}
 }

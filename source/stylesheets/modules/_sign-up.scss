@@ -23,10 +23,10 @@
 	}
 
 	.btn {
-		@include btn($background: $highlight, $base-color: #fff, $hover-color: $highlight, $hover-bg: #fff);
+		@include btn($background: transparent, $base-color: $base-bg, $hover-color: #fff, $hover-bg: $external-accent);
 
 		&:hover {
-			border-color: $highlight;
+			border-color: $external-accent;
 		}
 	}
 

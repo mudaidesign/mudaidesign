@@ -9,7 +9,6 @@
 	}
 
 	li {
-		font-size: 4em;
 		margin-bottom: 60px;
 	}
 
@@ -32,6 +31,16 @@
 		background: $base-bg;
 	    padding-top: 20vh;
 	    overflow: scroll;
+
+	    li {
+	    	text-transform: uppercase;
+	    }
+
+	    a {
+	    	font-family: $heading-font;
+	    	font-size: 3.2em;
+	    	font-weight: 500;
+	    }
 	}
 
 	.close-menu a:hover {
@@ -39,7 +48,6 @@
 	}
 
 	.contact {
-
 		a {
 			text-align: center;
 			display: block;

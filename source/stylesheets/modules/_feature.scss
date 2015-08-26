@@ -24,6 +24,11 @@
 			margin: 0 auto;
 			line-height: 1.5em;
 			margin-top: 40px;
+
+			@media all and (min-width: $med-tide) {
+				max-width: 640px;
+				margin-left: 0;
+			}
 		}
 	}
 
@@ -40,7 +45,7 @@
 }
 
 .feature.main-feature {
-	background: url(../images/HOMEPAGE.jpg) top center / cover;
+	background: url(../images/base/main-bg.jpg) top center / cover;
 	padding: 200px 0;
 }
 
@@ -56,6 +61,7 @@
 
 	h1 {
 		font-weight: 500;
+		text-transform: uppercase;
 
 		@media all and (min-width: $med-tide) {
 			font-size: 1em;
@@ -97,19 +103,19 @@
 }
 
 .featured-case.acw {
-	background: url(../images/bg-acw.jpeg) top center / cover;
+	background: url(../images/clayco/00_case-banner.jpg) top center / cover;
 }
 
 .featured-case.xcor {
-	background: url(../images/bg-xcor.jpeg) top center / cover;
+	background: url(../images/xcor/00_case-banner.jpg) top center / cover;
 }
 
 .featured-case.insite {
-	background: url(../images/INSITE/INSITE_04.jpg) top center / cover;
+	background: url(../images/insite/00_case-banner.jpg) top center / cover;
 }
 
 .featured-case.woc {
-	background: url(../images/WOC/Workshop.jpg) top center / cover;
+	background: url(../images/woc/00_case-banner.jpg) top center / cover;
 }
 
 .feature.white-paper {
