@@ -2,6 +2,10 @@
 # Compass
 ###
 
+require 'builder'
+
+page "/sitemap.xml", :layout => false
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
