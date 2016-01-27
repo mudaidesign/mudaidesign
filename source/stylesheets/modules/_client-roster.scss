@@ -1,0 +1,16 @@
+.client-roster {
+	background: #e5e5e5;
+	display: none;
+
+	@media screen and (min-width: $med-tide) {
+		display: block;
+	}
+
+	img {
+		display: block;
+		max-width: 830px;
+		margin: 0 auto;
+		margin-top: 100px;
+		width: 100%;
+	}
+}
