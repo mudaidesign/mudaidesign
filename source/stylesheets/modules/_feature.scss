@@ -52,7 +52,7 @@
 .feature.featured-case {
 	text-align: left;
 	color: white;
-	padding: 160px 0;
+	padding: 240px 0;
 
 	.title {
 		text-align: left;
@@ -112,6 +112,10 @@
 
 .featured-case.insite {
 	background: url(../images/insite/00_case-banner.jpg) top center / cover;
+}
+
+.featured-case.salesforce {
+	background: url(../images/salesforce/HeroB.jpg) top center / cover;
 }
 
 .featured-case.woc {

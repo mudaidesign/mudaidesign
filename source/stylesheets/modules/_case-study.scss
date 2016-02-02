@@ -13,7 +13,7 @@
 	}
 
 	p {
-		padding: 10%;
+		padding: 3em 6em;
 		margin: 0;
 
 		@media all and (min-width: $med-tide) {
@@ -24,5 +24,9 @@
 
 	.end-cap {
 		padding-bottom: 80px;
+	}
+
+	img {
+		max-width: 100%;
 	}
 }
