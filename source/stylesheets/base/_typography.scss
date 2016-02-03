@@ -28,11 +28,11 @@ $body-font: 'Whitney SSm A', 'Whitney SSm B';
 
 body {
 	@include body-font($weight: 400);
-	font-size: 12px;
+	font-size: 18px;
 
-	@media screen and (min-width: 720px) {
-		font-size: 18px;
-	}
+	// @media screen and (min-width: 720px) {
+	// 	font-size: 18px;
+	// }
 
 }
 

@@ -15,8 +15,12 @@
 		max-width: 830px;
 
 		h1 {
-			font-size: 3.2em;
+			font-size: 2.5em;
 			font-weight: 500;
+
+			@media screen and (min-width: $med-tide) {
+				font-size: 3.2em;
+			}
 		}
 
 		p {
@@ -46,13 +50,21 @@
 
 .feature.main-feature {
 	background: url(../images/base/main-bg.jpg) top center / cover;
-	padding: 200px 0;
+	padding: 120px 0 200px 0;
+
+	@media screen and (min-width: $med-tide) {
+		padding: 200px 0;
+	}
 }
 
 .feature.featured-case {
 	text-align: left;
 	color: white;
-	padding: 240px 0;
+	padding: 120px 0 200px 0;
+
+	@media screen and (min-width: $med-tide) {
+		padding: 240px 0;
+	}
 
 	.title {
 		text-align: left;
