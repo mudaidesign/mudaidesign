@@ -74,10 +74,7 @@
 	h1 {
 		font-weight: 500;
 		text-transform: uppercase;
-
-		@media all and (min-width: $med-tide) {
-			font-size: 1em;
-		}
+		font-size: 1em;
 	}
 
 	h2 {
@@ -132,6 +129,10 @@
 
 .featured-case.woc {
 	background: url(../images/woc/00_case-banner.jpg) top center / cover;
+}
+
+.featured-case.allstate {
+	background: url(../images/allstate/Allstate_Hero-Image.jpg) top center / cover;
 }
 
 .feature.white-paper {
