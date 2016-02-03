@@ -14,9 +14,12 @@ $body-font: 'Whitney SSm A', 'Whitney SSm B';
 // 	-webkit-font-smoothing: antialiased;
 // }
 
+// Using IonIcons for web icon font: http://ionicons.com
+
 @mixin heading-font($color: black, $weight: 400) {
 	font-family: 'Gotham A', 'Gotham B', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	color: $color;
+	font-weight: $weight;
 }
 
 @mixin body-font($weight: 300, $style: normal, $color: black) {
