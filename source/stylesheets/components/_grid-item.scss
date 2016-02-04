@@ -40,7 +40,7 @@
 	}
 
 	.btn {
-		font-size: 16px;
+		// font-size: 16px;
 	    position: absolute;
 	    z-index: 10;
 	}
@@ -152,7 +152,7 @@ a.grid-item:hover {
 
 	.btn {
 		@include btn($base-color: #fff, $background: $action-accent, $hover-color: #fff, $hover-bg: $action-accent);
-		font-size: 16px;
+		// font-size: 16px;
 	    bottom: 50px;
 	    left: 64px;
 	}
