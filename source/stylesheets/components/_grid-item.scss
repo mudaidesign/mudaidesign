@@ -71,11 +71,11 @@
 
 .item-text {
 	padding: 20px;
-	position: relative;
 	z-index: 10;
 }
 
 .item-text.shade {
+	position: relative;
 	background: -webkit-linear-gradient(to bottom, rgba(0,0,0,.6) 40%, rgba(0,0,0,0));
 	   background: -moz-linear-gradient(to bottom, rgba(0,0,0,.6) 40%, rgba(0,0,0,0));
 	    background: -ms-linear-gradient(to bottom, rgba(0,0,0,.6) 40%, rgba(0,0,0,0));
@@ -152,9 +152,9 @@ a.grid-item:hover {
 
 	.btn {
 		@include btn($base-color: #fff, $background: $action-accent, $hover-color: #fff, $hover-bg: $action-accent);
-		// font-size: 16px;
+		font-size: 16px;
 	    bottom: 50px;
-	    left: 64px;
+	    left: 60px;
 	}
 
 	&:hover {
