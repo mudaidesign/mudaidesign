@@ -15,16 +15,16 @@
 		max-width: 830px;
 
 		h1 {
-			font-size: 2.5em;
-			font-weight: 500;
+			font-size: 2.3em;
+			@include heading-font($color: white, $weight: 600);
 
-			@media screen and (min-width: $med-tide) {
-				font-size: 3.2em;
+			@media all and (min-width: $med-tide) {
+				padding-right: 100px;
 			}
 		}
 
 		p {
-			font-size: 1.2em;
+			font-size: 1.15em;
 			margin: 0 auto;
 			line-height: 1.5em;
 			margin-top: 40px;
@@ -135,7 +135,7 @@
 }
 
 .featured-case.salesforce {
-	background: url(../images/salesforce/HeroB.jpg) top center / cover;
+	background: url(../images/salesforce/Hero_B.jpg) top center / cover;
 }
 
 .featured-case.ama-succeeding {
