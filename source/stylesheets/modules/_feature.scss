@@ -53,34 +53,11 @@
 
 .feature.main-feature {
 	padding: 120px 0 200px 0;
+	background: url(../images/base/test.jpg) top center / cover no-repeat;
 
 	@media screen and (min-width: $med-tide) {
 		padding: 200px 0;
 	}
-}
-
-.feature.main-feature.index-one {
-	background: url(../images/base/test.jpg) top center / cover no-repeat;
-}
-
-.feature.main-feature.index-two {
-	background: url(../images/base/Home_02.jpg) top center / cover;
-}
-
-.feature.main-feature.index-three {
-	background: url(../images/base/Home_03.jpg) top center / cover;
-}
-
-.feature.main-feature.index-four {
-	background: url(../images/base/Home_04.jpg) top center / cover;
-}
-
-.feature.main-feature.index-five {
-	background: url(../images/base/Home_05.jpg) top center / cover;
-}
-
-.feature.main-feature.index-six {
-	background: url(../images/base/Home_06.jpg) top center / cover;
 }
 
 .feature.featured-case {
@@ -161,7 +138,7 @@
 }
 
 .featured-case.salesforce {
-	background: url(../images/salesforce/Hero_B.jpg) top center / cover;
+	background: url(../images/salesforce/Hero_C.jpg) top center / cover;
 }
 
 .featured-case.ama-succeeding {
