@@ -23,10 +23,12 @@
 	}
 
 	.copy {
+
 		@media all and (min-width: 600px) {
 			float: left;
 			width: 60%;
 			padding: 40px;
+			padding-bottom: 0;
 		}
 	}
 
