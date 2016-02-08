@@ -16,18 +16,21 @@
 
 		h1 {
 			font-size: 2.3em;
-			@include heading-font($color: white, $weight: 600);
+			@include heading-font($color: white, $weight: 900);
+			line-height: 1;
+			letter-spacing: 1px;
 
 			@media all and (min-width: $med-tide) {
-				padding-right: 100px;
+				padding-right: 260px;
 			}
 		}
 
 		p {
-			font-size: 1.15em;
+			font-size: 1.25em;
 			margin: 0 auto;
-			line-height: 1.5em;
-			margin-top: 40px;
+			line-height: 1;
+			margin-top: 30px;
+			@include heading-font($color: white, $weight: 900);
 
 			@media all and (min-width: $med-tide) {
 				max-width: 640px;
@@ -49,12 +52,35 @@
 }
 
 .feature.main-feature {
-	background: url(../images/base/main-bg.jpg) top center / cover;
 	padding: 120px 0 200px 0;
 
 	@media screen and (min-width: $med-tide) {
 		padding: 200px 0;
 	}
+}
+
+.feature.main-feature.index-one {
+	background: url(../images/base/test.jpg) top center / cover no-repeat;
+}
+
+.feature.main-feature.index-two {
+	background: url(../images/base/Home_02.jpg) top center / cover;
+}
+
+.feature.main-feature.index-three {
+	background: url(../images/base/Home_03.jpg) top center / cover;
+}
+
+.feature.main-feature.index-four {
+	background: url(../images/base/Home_04.jpg) top center / cover;
+}
+
+.feature.main-feature.index-five {
+	background: url(../images/base/Home_05.jpg) top center / cover;
+}
+
+.feature.main-feature.index-six {
+	background: url(../images/base/Home_06.jpg) top center / cover;
 }
 
 .feature.featured-case {
