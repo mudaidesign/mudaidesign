@@ -39,6 +39,12 @@
 		z-index: 10;
 	}
 
+	.icon-slack {
+		height: 30px;
+		width: 30px;
+		fill: white;
+	}
+
 	.btn {
 		// font-size: 16px;
 	    position: absolute;
@@ -157,9 +163,17 @@ a.grid-item:hover {
 	    left: 60px;
 	}
 
+	.slack-cta {
+		left: 54px;
+	}
+
 	&:hover {
 		@include card-hover($bg-color: #fff, $font-color: $action-accent);
 	}
+	&:hover .icon-slack {
+		fill: $action-accent;
+	}
+
 }
 
 .grid-item.case-study {
